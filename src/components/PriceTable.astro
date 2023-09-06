@@ -17,7 +17,7 @@ const currencies = kits.reduce((allCurrencies, kit) => {
       <th>Name</th>
       {
         currencies.map((currency) => {
-          return <th>{currency}</th>;
+          return <th class="text-align-right">{currency}</th>;
         })
       }
     </tr>
@@ -29,7 +29,7 @@ const currencies = kits.reduce((allCurrencies, kit) => {
           <tr>
             <td>{kit.name}</td>
             {currencies.map((currency) => {
-              return <td>{kit.price[currency]}</td>;
+              return <td class="text-align-right">{kit.price[currency]}</td>;
             })}
           </tr>
         );
@@ -52,5 +52,8 @@ const currencies = kits.reduce((allCurrencies, kit) => {
 
   tr:nth-child(even) {
     background-color: #eaeaea;
+  }
+  .text-align-right {
+    text-align: right;
   }
 </style>

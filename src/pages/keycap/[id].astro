@@ -10,29 +10,69 @@ const response = data.filter((item) => {
 <Layout title="Keycap demo">
   <section>
     <div class="keycap-info-container">
-      <div>
+      <div class="keycap-image-info-container">
+        <img src={response[0].attributes.imageSrc} alt="" class="image-info" />
+      </div>
+      <main class="keycap-main-info-container">
         <h2 class="keycap-header-two">{response[0].attributes.title}</h2>
+        <div class="reference-container">
+          <p>Reference:</p>
+          <a href={response[0].attributes.groupBuyLink} class="reference-link"
+            >Link</a
+          >
+        </div>
         <p class="keycap-description">{response[0].attributes.description}</p>
-      </div>
-      <div>
-        <img src={response[0].attributes.imageSrc} alt="" class="image-link" />
-      </div>
+        <h3 class="keycap-header-three">Kits</h3>
+        <div class="kits-button-container">
+          {
+            response[0].attributes.kits.map((item) => {
+              return <button class="kits-button">{item}</button>;
+            })
+          }
+        </div>
+      </main>
     </div>
   </section>
 </Layout>
 <style>
-  .keycap-header-two {
-    font-size: 2rem;
-  }
   .keycap-info-container {
     display: grid;
     grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .keycap-header-two {
+    font-size: 2rem;
   }
 
-  .keycap-description {
-    padding: 1rem 1rem 1rem 0rem;
+  .reference-container {
+    display: flex;
+    font-size: 1rem;
+    gap: 0.25rem;
+  }
+  .reference-link {
+    color: blue;
+    /* text-decoration: underline; */
   }
 
+  .kits-button-container {
+    display: flex;
+    gap: 0.5rem;
+  }
+  .kits-button {
+    padding: 5px 10px 5px 10px;
+    border: 1px solid black;
+    outline: none;
+    background-color: white;
+    cursor: pointer;
+  }
+
+  .image-info {
+    object-fit: cover;
+    border-radius: 0.5rem;
+    height: 100%;
+    width: 100%;
+    max-width: 500px;
+  }
   @media (min-width: 640px) {
   }
 
@@ -40,12 +80,9 @@ const response = data.filter((item) => {
     .keycap-info-container {
       grid-template-columns: 1fr 1fr;
     }
-  }
-  .image-link {
-    object-fit: cover;
-    border-radius: 0.5rem;
-    height: 100%;
-    width: 100%;
-    max-width: 500px;
+
+    .keycap-info-container > div:first-child {
+      order: 2;
+    }
   }
 </style>

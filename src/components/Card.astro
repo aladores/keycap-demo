@@ -1,9 +1,9 @@
 ---
 import { Image } from "astro:assets";
-const { href, title, imageSrc } = Astro.props;
+const { id, title, imageSrc } = Astro.props;
 ---
 
-<a href={"keycaps/" + href}>
+<a href={`/keycap/${id}`}>
   <li class="card">
     <Image src={imageSrc} alt="" class="image-link" height="400" width="400" />
     <h3 class="card-title">
@@ -41,17 +41,4 @@ const { href, title, imageSrc } = Astro.props;
     width: 100%;
     aspect-ratio: 1 / 1;
   }
-  /* @media (min-width: 640px) {
-    .image-link {
-      height: 150px;
-      width: 150px;
-    }
-  }
-
-  @media (min-width: 768px) {
-    .image-link {
-      height: 200px;
-      width: 200px;
-    }
-  } */
 </style>

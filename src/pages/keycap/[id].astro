@@ -1,0 +1,51 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { data } from "../../../public/data";
+const { id } = Astro.params;
+const response = data.filter((item) => {
+  return id === item.id;
+});
+---
+
+<Layout title="Keycap demo">
+  <section>
+    <div class="keycap-info-container">
+      <div>
+        <h2 class="keycap-header-two">{response[0].attributes.title}</h2>
+        <p class="keycap-description">{response[0].attributes.description}</p>
+      </div>
+      <div>
+        <img src={response[0].attributes.imageSrc} alt="" class="image-link" />
+      </div>
+    </div>
+  </section>
+</Layout>
+<style>
+  .keycap-header-two {
+    font-size: 2rem;
+  }
+  .keycap-info-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .keycap-description {
+    padding: 1rem 1rem 1rem 0rem;
+  }
+
+  @media (min-width: 640px) {
+  }
+
+  @media (min-width: 768px) {
+    .keycap-info-container {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  .image-link {
+    object-fit: cover;
+    border-radius: 0.5rem;
+    height: 100%;
+    width: 100%;
+    max-width: 500px;
+  }
+</style>

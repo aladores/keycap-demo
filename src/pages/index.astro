@@ -1,25 +1,22 @@
 ---
 import gmkNoire from "../assets/gmk_noire.jpeg";
 import gmkCafe from "../assets/gmk_cafe.webp";
-import gmkMasterpiece from "../assets/gmk_masterpiece.webp";
-import gmkMetropolis from "../assets/gmk_metropolis.png";
-import Layout from "../layouts/Layout.astro";
-import Header from "../components/Header.astro";
 
+import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
+
 import { data } from "../../public/data";
 ---
 
 <Layout title="Welcome to Astro.">
   <main>
-    <Header />
     <h2 class="header-main-subtitle">Featured</h2>
     <ul role="list" class="card-grid">
       {
         data.map((item) => {
           return (
             <Card
-              href={item.id}
+              id={item.id}
               title={item.attributes.title}
               imageSrc={item.attributes.imageSrc}
             />
@@ -34,14 +31,6 @@ import { data } from "../../public/data";
   .header-main-subtitle {
     font-size: 2rem;
     padding-bottom: 1rem;
-  }
-  main {
-    margin: auto;
-    padding: 1rem;
-    width: 1024px;
-    max-width: calc(100% - 2rem);
-    font-size: 20px;
-    line-height: 1.6;
   }
 
   .card-grid {

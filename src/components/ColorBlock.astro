@@ -22,14 +22,14 @@ const { colors } = Astro.props;
 
 <style>
   .color-block-row-container {
-    display: flex;
-    gap: 2rem;
+    display:flex;
+    flex-wrap:wrap;
+    gap: 1rem;
   }
 
   .color-card{
-    display:flex;
-    flex-direction:column;
     border: 1px solid black;
+    width:125px;
   }
   .color-block{
     height:125px;
@@ -38,7 +38,12 @@ const { colors } = Astro.props;
   .color-card-info{
     padding:5px 10px 5px 10px;
   }
-  @media (min-width: 640px) {
+
+  @media (min-width: 768px) {
+    .color-block-row-container {
+    gap: 2rem;
+  }
+
     .color-block{
     height:125px;
     width:125px;

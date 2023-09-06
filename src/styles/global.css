@@ -161,3 +161,7 @@ a {
 .text-bold {
     font-weight: bold;
 }
+
+.word-break {
+    word-break: break-all;
+}

@@ -35,8 +35,8 @@ export const data = [
 
             ],
             colors: [
-                { name: "Base", color: { code: "GMK CR", hex: "#171718" } },
-                { name: "Legends", color: { code: "RAL 1013", hex: "#EAE6CA" } },
+                { name: "Base", color: { code: "Custom Blue (RAL)", hex: "#006A93" } },
+                { name: "Legends", color: { code: "GMK WS1", hex: "#f7f2ea" } },
             ]
         },
     },
@@ -58,8 +58,10 @@ export const data = [
                 { name: "Compact", price: {} }
             ],
             colors: [
-                { name: "Base", color: { code: "GMK CR", hex: "#171718" } },
-                { name: "Legends", color: { code: "RAL 1013", hex: "#EAE6CA" } },
+                { name: "Base", color: { code: "Pantone 5395c", hex: "#091f2c" } },
+                { name: "Legends", color: { code: "Pantone 333c", hex: "#3cdbc0" } },
+                { name: "Modifiers", color: { code: "Pantone 142c", hex: "#f1be48" } },
+                { name: "Modifiers", color: { code: "Pantone 179c", hex: "#e03c31" } },
             ]
         },
     },
@@ -81,8 +83,9 @@ export const data = [
 
             ],
             colors: [
-                { name: "Base", color: { code: "GMK CR", hex: "#171718" } },
-                { name: "Legends", color: { code: "RAL 1013", hex: "#EAE6CA" } },
+                { name: "Base", color: { code: "GMK L9", hex: "#d8d2c3" } },
+                { name: "Legends", color: { code: "RAL 8019", hex: "#3A3333" } },
+                { name: "Accents", color: { code: "RAL 1001", hex: "#d0b084" } },
             ]
         },
     },

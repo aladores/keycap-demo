@@ -7,8 +7,10 @@ export const data = [
             imageSrc: "https://www.deskhero.ca/cdn/shop/products/3NCBRQM_925ad50c-9782-423a-9365-9eeb4cd4cdb8_626x418.png?v=1652461455",
             description: "Inspired by a need for a set that would work well on as many boards as possible, regardless of design, layout, budget or color; and inspired by midcentury modern and minimalist design",
             groupBuyLink: "https://geekhack.org/index.php?topic=108890.0",
-            price: "",
-            kits: ["Base", "Novelties"],
+            kits: [
+                { name: "Base", price: { USD: 99.99, CAD: 129.99 } },
+                { name: "Novelties", price: { USD: 49.99, CAD: 64.99 } }
+            ]
         },
     },
     {

@@ -1,0 +1,56 @@
+---
+const { kits } = Astro.props;
+
+const currencies = kits.reduce((allCurrencies, kit) => {
+  Object.keys(kit.price).forEach((currency) => {
+    if (!allCurrencies.includes(currency)) {
+      allCurrencies.push(currency);
+    }
+  });
+  return allCurrencies;
+}, []);
+---
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      {
+        currencies.map((currency) => {
+          return <th>{currency}</th>;
+        })
+      }
+    </tr>
+  </thead>
+  <tbody>
+    {
+      kits.map((kit) => {
+        return (
+          <tr>
+            <td>{kit.name}</td>
+            {currencies.map((currency) => {
+              return <td>{kit.price[currency]}</td>;
+            })}
+          </tr>
+        );
+      })
+    }
+  </tbody>
+</table>
+<style>
+  table {
+    font-size: 1rem;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  td,
+  th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+  tr:nth-child(even) {
+    background-color: #eaeaea;
+  }
+</style>

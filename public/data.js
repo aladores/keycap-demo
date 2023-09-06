@@ -11,6 +11,10 @@ export const data = [
             kits: [
                 { name: "Base", price: { USD: 140.00, EUR: 129.00, CAD: 190.00 } },
                 { name: "Novelties", price: { USD: 45.00, EUR: 39.00, CAD: 62.00 } }
+            ],
+            colors: [
+                { name: "Base", color: { code: "GMK CR", hex: "#171718" } },
+                { name: "Legends", color: { code: "RAL 1013", hex: "#EAE6CA" } },
             ]
         },
     },
@@ -29,6 +33,10 @@ export const data = [
                 { name: "Preserving", price: { USD: 45.00, EUR: 38.00, AUD: 60.00, SGD: 54.00, CAD: 52.00 } },
                 { name: "West", price: { USD: 45.00, EUR: 66.00, AUD: 100.00, SGD: 91.00, CAD: 88.00 } }
 
+            ],
+            colors: [
+                { name: "Base", color: { code: "GMK CR", hex: "#171718" } },
+                { name: "Legends", color: { code: "RAL 1013", hex: "#EAE6CA" } },
             ]
         },
     },
@@ -48,7 +56,10 @@ export const data = [
                 { name: "Turnpike", price: {} },
                 { name: "Spacebars", price: {} },
                 { name: "Compact", price: {} }
-
+            ],
+            colors: [
+                { name: "Base", color: { code: "GMK CR", hex: "#171718" } },
+                { name: "Legends", color: { code: "RAL 1013", hex: "#EAE6CA" } },
             ]
         },
     },
@@ -68,6 +79,10 @@ export const data = [
                 { name: "Spacebars", price: { USD: 23.00, EUR: 22.00, AUD: 36.00, SGD: 34.00, CAD: 33.00 } },
                 { name: "40s/ Ortho", price: { USD: 52.00, EUR: 49.00, AUD: 83.00, SGD: 77.00, CAD: 75.00 } },
 
+            ],
+            colors: [
+                { name: "Base", color: { code: "GMK CR", hex: "#171718" } },
+                { name: "Legends", color: { code: "RAL 1013", hex: "#EAE6CA" } },
             ]
         },
     },

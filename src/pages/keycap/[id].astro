@@ -1,6 +1,8 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import PriceTable from "../../components/PriceTable.astro";
+import ColorBlock from "../../components/ColorBlock.astro";
+
 import { data } from "../../../public/data";
 
 const { id } = Astro.params;
@@ -18,11 +20,11 @@ const response = data.filter((item) => {
       <main class="keycap-main-info-container">
         <div>
           <h2 class="keycap-header-two">{response[0].attributes.title}</h2>
-          <p class="designed-container">
+          <p class="text-normal">
             Designed by: {response[0].attributes.designer}
           </p>
         </div>
-        <p class="keycap-description">{response[0].attributes.description}</p>
+        <p class="text-normal">{response[0].attributes.description}</p>
         <div>
           <h3 class="keycap-header-three">Kits</h3>
           <div class="kits-button-container">
@@ -39,10 +41,16 @@ const response = data.filter((item) => {
             Object.keys(response[0].attributes.kits[0].price).length !== 0 ? (
               <PriceTable kits={response[0].attributes.kits} />
             ) : (
-              <p class="text-regular">No pricing available.</p>
+              <p class="text-base">No pricing available.</p>
             )
           }
         </div>
+        <div>
+          <h3 class="keycap-header-three">Colors</h3>
+          <!-- {console.log(response[0].attributes.colors)} -->
+          <ColorBlock colors={response[0].attributes.colors} />
+        </div>
+
         <div class="reference-container">
           <p>Reference:</p>
           <a href={response[0].attributes.groupBuyLink} class="reference-link"
@@ -70,9 +78,6 @@ const response = data.filter((item) => {
       gap: 1rem;
     }
 
-    .designed-container {
-      font-size: 1rem;
-    }
     .reference-container {
       display: flex;
       font-size: 1rem;
@@ -83,13 +88,6 @@ const response = data.filter((item) => {
       /* text-decoration: underline; */
     }
 
-    .keycap-description {
-      font-size: 1rem;
-    }
-
-    .text-regular {
-      font-size: 1rem;
-    }
     .kits-button-container {
       display: flex;
       flex-wrap: wrap;

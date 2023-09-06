@@ -1,0 +1,47 @@
+---
+const { colors } = Astro.props;
+---
+
+<div class="color-block-row-container">
+  {
+    colors.map((item) => {
+      return (
+        <div class="color-card">
+   
+            <div class="color-block" style={`background-color:${item.color.hex}`}></div>
+            <div class="color-card-info">
+                <div class="text-base text-bold">{item.color.code}</div>
+                <div class="text-sm">{item.color.hex}</div>
+                <div class="text-sm text-bold">{item.name}</div>
+            </div>
+        </div>
+      );
+    })
+  }
+</div>
+
+<style>
+  .color-block-row-container {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .color-card{
+    display:flex;
+    flex-direction:column;
+    border: 1px solid black;
+  }
+  .color-block{
+    height:125px;
+    width:125px;
+  }
+  .color-card-info{
+    padding:5px 10px 5px 10px;
+  }
+  @media (min-width: 640px) {
+    .color-block{
+    height:125px;
+    width:125px;
+  }
+  }
+</style>

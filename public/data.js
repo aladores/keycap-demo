@@ -9,8 +9,8 @@ export const data = [
             designer: "apiary",
             groupBuyLink: "https://geekhack.org/index.php?topic=108890.0",
             kits: [
-                { name: "Base", price: { USD: 140.00, EUR: 129.00, CAD: 190.00 } },
-                { name: "Novelties", price: { USD: 45.00, EUR: 39.00, CAD: 62.00 } }
+                { name: "Base", price: { USD: 140.00, EUR: 129.00, CAD: 190.00 }, imageSrc: "https://www.deskhero.ca/cdn/shop/products/3NCBRQM_925ad50c-9782-423a-9365-9eeb4cd4cdb8_626x418.png?v=1652461455" },
+                { name: "Novelties", price: { USD: 45.00, EUR: 39.00, CAD: 62.00 }, imageSrc: "https://www.deskhero.ca/cdn/shop/products/jmu6gRk_23ad5569-504e-4738-be25-6c388974cd18_723x482.png?v=1652461937" }
             ],
             colors: [
                 { name: "Base", color: { code: "GMK CR", hex: "#171718" } },
@@ -62,7 +62,7 @@ export const data = [
                 { name: "Legends", color: { code: "Pantone 333c", hex: "#3cdbc0" } },
                 { name: "Modifiers", color: { code: "Pantone 142c", hex: "#f1be48" } },
                 { name: "Modifiers", color: { code: "Pantone 179c", hex: "#e03c31" } },
-            ]
+            ],
         },
     },
     {

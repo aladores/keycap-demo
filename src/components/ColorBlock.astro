@@ -7,13 +7,15 @@ const { colors } = Astro.props;
     colors.map((item) => {
       return (
         <div class="color-card">
-   
-            <div class="color-block" style={`background-color:${item.color.hex}`}></div>
-            <div class="color-card-info">
-                <div class="text-base text-bold">{item.color.code}</div>
-                <div class="text-sm">{item.color.hex}</div>
-                <div class="text-sm text-bold">{item.name}</div>
-            </div>
+          <div
+            class="color-block"
+            style={`background-color:${item.color.hex}`}
+          />
+          <div class="color-card-info">
+            <div class="text-base text-bold">{item.color.code}</div>
+            <div class="text-small">{item.color.hex}</div>
+            <div class="text-small text-bold">{item.name}</div>
+          </div>
         </div>
       );
     })
@@ -22,31 +24,31 @@ const { colors } = Astro.props;
 
 <style>
   .color-block-row-container {
-    display:flex;
-    flex-wrap:wrap;
+    display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
   }
 
-  .color-card{
+  .color-card {
     border: 1px solid black;
-    width:125px;
+    width: 125px;
   }
-  .color-block{
-    height:125px;
-    width:125px;
+  .color-block {
+    height: 125px;
+    width: 125px;
   }
-  .color-card-info{
-    padding:5px 10px 5px 10px;
+  .color-card-info {
+    padding: 5px 10px 5px 10px;
   }
 
   @media (min-width: 768px) {
     .color-block-row-container {
-    gap: 2rem;
-  }
+      gap: 2rem;
+    }
 
-    .color-block{
-    height:125px;
-    width:125px;
-  }
+    .color-block {
+      height: 125px;
+      width: 125px;
+    }
   }
 </style>

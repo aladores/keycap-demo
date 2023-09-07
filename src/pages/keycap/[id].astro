@@ -1,6 +1,7 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import ImageCarousel from "../../components/ImageCarousel.astro";
+import ImageCarousel from "../../components/ImageCarousel.jsx";
+import KitsButtons from "../../components/KitsButtons.jsx";
 import PriceTable from "../../components/PriceTable.astro";
 import ColorBlock from "../../components/ColorBlock.astro";
 
@@ -10,21 +11,13 @@ const { id } = Astro.params;
 const response = data.filter((item) => {
   return id === item.id;
 });
-
-let activeKitIndex = 0;
-function changeKit(index) {
-  activeKitIndex = index;
-}
 ---
 
 <Layout title="Keycap demo">
   <section>
     <div class="keycap-info-container">
-      <div>
-        <ImageCarousel
-          kits={response[0].attributes.kits}
-          activeKitIndex={activeKitIndex}
-        />
+      <div class="keycap-carousel-container">
+        <ImageCarousel client:load kits={response[0].attributes.kits} />
       </div>
       <main class="keycap-main-info-container">
         <div>
@@ -36,18 +29,9 @@ function changeKit(index) {
         <p class="text-base">{response[0].attributes.description}</p>
         <div>
           <h3 class="keycap-header-three">Kits</h3>
-          <div class="kits-button-container">
-            {
-              response[0].attributes.kits.map((item, index) => {
-                return (
-                  <button class="kits-button" onClick={() => changeKit(index)}>
-                    {item.name}
-                  </button>
-                );
-              })
-            }
-          </div>
+          <KitsButtons client:load kits={response[0].attributes.kits} />
         </div>
+
         <div>
           <h3 class="keycap-header-three">Colors</h3>
           <ColorBlock colors={response[0].attributes.colors} />
@@ -76,7 +60,13 @@ function changeKit(index) {
     </div>
   </section>
 </Layout>
+
 <style>
+  .keycap-carousel-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .keycap-header-two {
     font-size: 2rem;
   }
@@ -107,11 +97,6 @@ function changeKit(index) {
     /* text-decoration: underline; */
   }
 
-  .kits-button-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-  }
   .kits-button {
     padding: 5px 10px 5px 10px;
     border: 1px solid black;

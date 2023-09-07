@@ -1,0 +1,19 @@
+.kits-button-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.kits-button {
+    padding: 5px 10px 5px 10px;
+    border: 1px solid black;
+    outline: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+.active {
+    background-color: black;
+    color: white;
+    transition: all 0.1s;
+}

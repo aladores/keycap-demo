@@ -31,11 +31,10 @@ const { colors } = Astro.props;
 
   .color-card {
     border: 1px solid black;
-    width: 125px;
+    width: 100px;
   }
   .color-block {
-    height: 125px;
-    width: 125px;
+    height: 100px;
   }
   .color-card-info {
     padding: 5px 10px 5px 10px;
@@ -46,9 +45,11 @@ const { colors } = Astro.props;
       gap: 2rem;
     }
 
+    .color-card {
+      width: 125px;
+    }
     .color-block {
       height: 125px;
-      width: 125px;
     }
   }
 </style>

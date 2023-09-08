@@ -27,7 +27,7 @@ const currencies = kits.reduce((allCurrencies, kit) => {
       kits.map((kit) => {
         return (
           <tr>
-            <td>{kit.name}</td>
+            <td class="word-break">{kit.name}</td>
             {currencies.map((currency) => {
               return <td class="text-align-right">{kit.price[currency]}</td>;
             })}

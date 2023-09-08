@@ -11,7 +11,7 @@ import "../styles/ImageCarousel.css";
 export default function ImageCarousel({ kits }) {
   const $index = useStore(index);
 
-  function handleDotClick(index) {
+  function handleKitClick(index) {
     setIndex(index);
   }
 
@@ -31,13 +31,41 @@ export default function ImageCarousel({ kits }) {
 
   function setActive() {
     const dots = document.querySelectorAll(".carousel-dot");
+    const thumbnails = document.querySelectorAll(".mini-thumbnail");
+
     dots.forEach((dot, index) => {
       dot.classList.toggle("active", index === $index);
+    });
+
+    thumbnails.forEach((thumbnail, index) => {
+      thumbnail.classList.toggle("active", index === $index);
     });
   }
 
   const leftArrowElement = () => {
-    return <div className="carousel-arrow left-arrow text-base">❮</div>;
+    if ($index !== 0) {
+      return (
+        <div
+          className="carousel-arrow left-arrow text-base"
+          onClick={decrementIndex}
+        >
+          ❮
+        </div>
+      );
+    }
+  };
+
+  const rightArrowElement = () => {
+    if ($index !== kits.length - 1) {
+      return (
+        <div
+          className="carousel-arrow right-arrow text-base"
+          onClick={incrementIndex}
+        >
+          ❯
+        </div>
+      );
+    }
   };
 
   return (
@@ -50,28 +78,22 @@ export default function ImageCarousel({ kits }) {
             );
           })}
         </div>
-        {/* {leftArrowElement} */}
-        {$index !== 0 ? (
-          <div
-            className="carousel-arrow left-arrow text-base"
-            onClick={decrementIndex}
-          >
-            ❮
-          </div>
-        ) : (
-          ""
-        )}
-
-        {$index !== kits.length - 1 ? (
-          <div
-            className="carousel-arrow right-arrow text-base"
-            onClick={incrementIndex}
-          >
-            ❯
-          </div>
-        ) : (
-          ""
-        )}
+        {leftArrowElement()}
+        {rightArrowElement()}
+      </div>
+      <div className="mini-thumbnail-container">
+        {kits.map((item, index) => {
+          return (
+            <img
+              src={item.imageSrc}
+              className="mini-thumbnail"
+              key={index}
+              onClick={() => {
+                handleKitClick(index);
+              }}
+            />
+          );
+        })}
       </div>
       <div className="carousel-dots-container">
         {kits.map((item, index) => {
@@ -79,7 +101,7 @@ export default function ImageCarousel({ kits }) {
             <div
               className="carousel-dot"
               onClick={() => {
-                handleDotClick(index);
+                handleKitClick(index);
               }}
               key={index}
             ></div>

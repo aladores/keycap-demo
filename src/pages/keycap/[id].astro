@@ -63,6 +63,8 @@ const response = data.filter((item) => {
 
 <style>
   .keycap-carousel-container {
+    display: flex;
+    justify-content: center;
   }
   .keycap-header-two {
     font-size: 2rem;
@@ -73,8 +75,7 @@ const response = data.filter((item) => {
 
   .keycap-info-container {
     display: grid;
-    justify-content: center;
-    align-items: center;
+
     grid-template-columns: 1fr;
     gap: 1rem;
   }
@@ -112,8 +113,6 @@ const response = data.filter((item) => {
       margin-top: 0rem;
     }
     .keycap-info-container {
-      justify-content: start;
-      align-items: start;
       grid-template-columns: 1fr 1fr;
     }
 

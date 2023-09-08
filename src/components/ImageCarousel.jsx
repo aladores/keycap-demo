@@ -1,6 +1,11 @@
 import { useState, useEffect } from "react";
 import { useStore } from "@nanostores/react";
-import { index, setIndex } from "../stores/indexStore";
+import {
+  index,
+  setIndex,
+  incrementIndex,
+  decrementIndex,
+} from "../stores/indexStore";
 import "../styles/ImageCarousel.css";
 
 export default function ImageCarousel({ kits }) {
@@ -31,6 +36,10 @@ export default function ImageCarousel({ kits }) {
     });
   }
 
+  const leftArrowElement = () => {
+    return <div className="carousel-arrow left-arrow text-base">❮</div>;
+  };
+
   return (
     <section className="carousel-container">
       <div className="carousel-slide-container">
@@ -41,8 +50,28 @@ export default function ImageCarousel({ kits }) {
             );
           })}
         </div>
-        <div className="carousel-arrow left-arrow text-base">❮</div>
-        <div className="carousel-arrow right-arrow text-base">❯</div>
+        {/* {leftArrowElement} */}
+        {$index !== 0 ? (
+          <div
+            className="carousel-arrow left-arrow text-base"
+            onClick={decrementIndex}
+          >
+            ❮
+          </div>
+        ) : (
+          ""
+        )}
+
+        {$index !== kits.length - 1 ? (
+          <div
+            className="carousel-arrow right-arrow text-base"
+            onClick={incrementIndex}
+          >
+            ❯
+          </div>
+        ) : (
+          ""
+        )}
       </div>
       <div className="carousel-dots-container">
         {kits.map((item, index) => {

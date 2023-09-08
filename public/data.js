@@ -15,7 +15,12 @@ export const data = [
             colors: [
                 { name: "Base", color: { code: "GMK CR", hex: "#171718" } },
                 { name: "Legends", color: { code: "RAL 1013", hex: "#EAE6CA" } },
-            ]
+            ],
+            dates: {
+                groupBuy: "October 2020",
+                shipped: "May 2022"
+            },
+
         },
     },
     {
@@ -37,14 +42,18 @@ export const data = [
             colors: [
                 { name: "Base", color: { code: "Custom Blue (RAL)", hex: "#006A93" } },
                 { name: "Legends", color: { code: "GMK WS1", hex: "#f7f2ea" } },
-            ]
+            ],
+            dates: {
+                groupBuy: "May 2019",
+                shipped: "April 2022"
+            },
         },
     },
     {
         id: "3",
         featured: true,
         attributes: {
-            title: "GMK Metropolis",
+            title: "GMK Metropolis r2",
             imageSrc: "https://www.deskhero.ca/cdn/shop/products/gmk_metropolis_r2_kit_01_base_a64756f4-f3b0-4d8d-b537-41b22056cdbf_760x507.png?v=1675889653",
             description: "Return to Metropolis with the highly anticipated second run of this iconic keyset. Featuring additional icon novelties, re-imagined kits, extended coverage, and some excellent collaborations from our friends at RAMA WORKS.",
             designer: "Nephlock",
@@ -63,6 +72,11 @@ export const data = [
                 { name: "Modifiers", color: { code: "Pantone 142c", hex: "#f1be48" } },
                 { name: "Modifiers", color: { code: "Pantone 179c", hex: "#e03c31" } },
             ],
+            dates: {
+                groupBuy: "April 2021",
+                shipped: "January 2023"
+            },
+
         },
     },
     {
@@ -86,7 +100,12 @@ export const data = [
                 { name: "Base", color: { code: "GMK L9", hex: "#d8d2c3" } },
                 { name: "Legends", color: { code: "RAL 8019", hex: "#3A3333" } },
                 { name: "Accents", color: { code: "RAL 1001", hex: "#d0b084" } },
-            ]
+            ],
+            dates: {
+                groupBuy: "October 2019",
+                shipped: "April 2020"
+            },
+
         },
     },
 ];

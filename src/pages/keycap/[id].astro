@@ -21,24 +21,24 @@ const response = data.filter((item) => {
       </div>
       <main class="keycap-main-info-container">
         <div>
-          <h2 class="keycap-header-two">{response[0].attributes.title}</h2>
+          <h2 class="text-3xl">{response[0].attributes.title}</h2>
           <p class="text-base">
             Designed by: {response[0].attributes.designer}
           </p>
         </div>
         <p class="text-base">{response[0].attributes.description}</p>
         <div>
-          <h3 class="keycap-header-three">Kits</h3>
+          <h3 class="text-xl keycap-header-three">Kits</h3>
           <KitsButtons client:load kits={response[0].attributes.kits} />
         </div>
 
         <div>
-          <h3 class="keycap-header-three">Colors</h3>
+          <h3 class="text-xl keycap-header-three">Colors</h3>
           <ColorBlock colors={response[0].attributes.colors} />
         </div>
 
         <div>
-          <h3 class="keycap-header-three">Pricing</h3>
+          <h3 class="text-xl keycap-header-three">Pricing</h3>
           {
             Object.keys(response[0].attributes.kits[0].price).length !== 0 ? (
               <PriceTable kits={response[0].attributes.kits} />
@@ -48,7 +48,15 @@ const response = data.filter((item) => {
           }
         </div>
         <div>
-          <h3 class="keycap-header-three">Dates</h3>
+          <h3 class="text-xl keycap-header-three">Dates</h3>
+          <p class="text-base">
+            <span class="text-bold">Group buy:</span>
+             &nbsp;{response[0].attributes.dates.groupBuy}
+          </p>
+          <p class="text-base">
+            <span class="text-bold">Shipped:</span>
+             &nbsp;{response[0].attributes.dates.shipped}
+          </p>
         </div>
         <div class="reference-container">
           <p>Reference:</p>

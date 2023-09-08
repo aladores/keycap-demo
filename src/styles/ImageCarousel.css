@@ -3,6 +3,11 @@
     overflow: hidden;
     width: 100%;
     max-width: 500px;
+
+}
+
+.carousel-slide-container {
+    position: relative;
 }
 
 .carousel-slide {
@@ -12,9 +17,38 @@
 }
 
 .carousel-image {
-    min-width: 500px;
+    width: initial;
     width: 100%;
     border-radius: 0.5rem;
+}
+
+.carousel-arrow {
+    display: flex;
+    position: absolute;
+    transform: translate(0, -50%);
+    background-color: rgba(173, 173, 173, 0.50);
+    color: white;
+    padding: 8px;
+    cursor: pointer;
+
+}
+
+.carousel-arrow:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.left-arrow {
+    top: 50%;
+    left: 0;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.right-arrow {
+
+    top: 50%;
+    right: 0;
+    border-radius: 5px 0px 0px 5px;
 }
 
 .carousel-dots-container {
@@ -38,9 +72,9 @@
     background-color: #333;
 }
 
-@media (max-width: 500px) {
+@media (min-width: 501px) {
     .carousel-image {
         width: 100%;
-        min-width: initial;
+        min-width: 500px;
     }
 }

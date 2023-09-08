@@ -33,12 +33,16 @@ export default function ImageCarousel({ kits }) {
 
   return (
     <section className="carousel-container">
-      <div className="carousel-slide">
-        {kits.map((item, index) => {
-          return (
-            <img src={item.imageSrc} className="carousel-image" key={index} />
-          );
-        })}
+      <div className="carousel-slide-container">
+        <div className="carousel-slide">
+          {kits.map((item, index) => {
+            return (
+              <img src={item.imageSrc} className="carousel-image" key={index} />
+            );
+          })}
+        </div>
+        <div className="carousel-arrow left-arrow text-base">❮</div>
+        <div className="carousel-arrow right-arrow text-base">❯</div>
       </div>
       <div className="carousel-dots-container">
         {kits.map((item, index) => {

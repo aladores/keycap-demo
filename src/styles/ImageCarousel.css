@@ -2,6 +2,7 @@
     position: relative;
     overflow: hidden;
     width: 100%;
+
 }
 
 .carousel-extras-container {
@@ -11,12 +12,15 @@
 }
 
 .carousel-slide-container {
+    border-radius: 0.5rem;
+    overflow: hidden;
     position: relative;
 }
 
+
 .carousel-slide {
     display: flex;
-    border-radius: 0.5rem;
+
     transition: transform 0.3s ease-in-out;
 }
 

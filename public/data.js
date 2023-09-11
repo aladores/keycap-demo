@@ -20,6 +20,24 @@ export const data = [
                 groupBuy: "October 2020",
                 shipped: "May 2022"
             },
+            deskmats: [
+                { name: "Disintegration", imageSrc: "https://oblotzky.industries/cdn/shop/products/deskmat_disintegration_1080x.jpg?v=1601827941" },
+                { name: "Diffraction", imageSrc: "https://oblotzky.industries/cdn/shop/products/deskmat_diffraction_1080x.jpg?v=1601827583" },
+                { name: "Division", imageSrc: "https://oblotzky.industries/cdn/shop/products/deskmat_division_720x.jpg?v=1601827583" },
+            ],
+            collabs: [
+                { name: "Salvun x Noire Aluminum", imageSrc: "https://oblotzky.industries/cdn/shop/products/salvun_noire_aluminium_1080x.jpg?v=1601828069" },
+                { name: "Salvun x Noire Brass", imageSrc: "https://oblotzky.industries/cdn/shop/products/salvun_noire_brass_1080x.jpg?v=1601828069" },
+                { name: "Salvun x Noire Copper", imageSrc: "https://oblotzky.industries/cdn/shop/products/salvun_noire_copper_1080x.jpg?v=1601828069" },
+            ],
+            renders: [
+                { name: "Keycult No 2", imageSrc: "https://oblotzky.industries/cdn/shop/products/gmk_noire_keyboard_no2rev1wkl_persp_front_low_1080x.jpg?v=1601828069" },
+                { name: "Keycult No 2", imageSrc: "https://oblotzky.industries/cdn/shop/products/gmk_noire_keyboard_no2rev1wkl_persp_right_close_2048x2048.jpg?v=1601828069" },
+                { name: "Zambumon Jules", imageSrc: "https://oblotzky.industries/cdn/shop/products/gmk_noire_keyboard_jules_ortho_top_angled_1080x.jpg?v=1601828069" },
+                { name: "Zambumon Jules", imageSrc: "https://oblotzky.industries/cdn/shop/products/gmk_noire_keyboard_jules_persp_left_close_720x.jpg?v=1601828069" },
+                { name: "Zambumon Scar", imageSrc: "https://oblotzky.industries/cdn/shop/products/gmk_noire_keyboard_sar_ortho_top_vertical_720x.jpg?v=1601828069" },
+                { name: "Zambumon Scar", imageSrc: "https://oblotzky.industries/cdn/shop/products/gmk_noire_keyboard_sar_persp_angled_left_720x.jpg?v=1601828069" },
+            ],
 
         },
     },
@@ -47,6 +65,11 @@ export const data = [
                 groupBuy: "May 2019",
                 shipped: "April 2022"
             },
+            deskmats: [
+                { name: "Disintegration", imageSrc: "https://oblotzky.industries/cdn/shop/products/deskmat_disintegration_1080x.jpg?v=1601827941" },
+                { name: "Diffraction", imageSrc: "https://oblotzky.industries/cdn/shop/products/deskmat_diffraction_1080x.jpg?v=1601827583" },
+                { name: "Division", imageSrc: "https://oblotzky.industries/cdn/shop/products/deskmat_division_720x.jpg?v=1601827583" },
+            ],
         },
     },
     {
@@ -76,6 +99,11 @@ export const data = [
                 groupBuy: "April 2021",
                 shipped: "January 2023"
             },
+            deskmats: [
+                { name: "Disintegration", imageSrc: "https://oblotzky.industries/cdn/shop/products/deskmat_disintegration_1080x.jpg?v=1601827941" },
+                { name: "Diffraction", imageSrc: "https://oblotzky.industries/cdn/shop/products/deskmat_diffraction_1080x.jpg?v=1601827583" },
+                { name: "Division", imageSrc: "https://oblotzky.industries/cdn/shop/products/deskmat_division_720x.jpg?v=1601827583" },
+            ],
 
         },
     },
@@ -105,7 +133,12 @@ export const data = [
                 groupBuy: "October 2019",
                 shipped: "April 2020"
             },
-
+            deskmats: [
+                { name: "Disintegration", imageSrc: "https://oblotzky.industries/cdn/shop/products/deskmat_disintegration_1080x.jpg?v=1601827941" },
+                { name: "Diffraction", imageSrc: "https://oblotzky.industries/cdn/shop/products/deskmat_diffraction_1080x.jpg?v=1601827583" },
+                { name: "Division", imageSrc: "https://oblotzky.industries/cdn/shop/products/deskmat_division_720x.jpg?v=1601827583" },
+            ],
         },
     },
+
 ];

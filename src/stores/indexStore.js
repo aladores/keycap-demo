@@ -7,11 +7,9 @@ export function setIndex(activeIndex) {
 }
 
 export function incrementIndex() {
-    //index.set(index++);
     index.set(index.get() + 1);
 }
 
 export function decrementIndex() {
-    //index.set(index--);
     index.set(index.get() - 1);
 }

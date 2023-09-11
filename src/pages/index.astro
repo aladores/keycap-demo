@@ -6,30 +6,115 @@ import { data } from "../../public/data";
 ---
 
 <Layout title="Welcome to Astro.">
-  <main>
-    <h2 class="header-main-subtitle">Featured</h2>
-    <ul role="list" class="card-grid">
-      {
-        data.map((item) => {
-          return (
-            <Card
-              id={item.id}
-              title={item.attributes.title}
-              imageSrc={item.attributes.imageSrc}
-            />
-          );
-        })
-      }
-    </ul>
+  <main class="main-container">
+    <section class="banner-container">
+      <img src={data[0].attributes.renders[0].imageSrc} class="banner-image" />
+      <div class="banner-info-wrapper">
+        <div class="banner-info-container">
+          <p class="text-small banner-label">
+            {data[0].attributes.designer.toUpperCase()}
+          </p>
+          <h3 class="text-xl">{data[0].attributes.title}</h3>
+          <p class="text-small banner-description">
+            {data[0].attributes.description}
+          </p>
+        </div>
+
+        <a class="button-banner-link" href={`/keycap/${1}`}>
+          <button class="button-banner text-normal">VIEW MORE</button>
+        </a>
+      </div>
+    </section>
+    <secition>
+      <h2 class="text-2xl header-main-subtitle">Featured</h2>
+      <ul role="list" class="card-grid">
+        {
+          data
+            .filter((item) => {
+              return item.featured === true;
+            })
+            .map((item) => {
+              return (
+                <Card
+                  id={item.id}
+                  title={item.attributes.title}
+                  imageSrc={item.attributes.imageSrc}
+                />
+              );
+            })
+        }
+      </ul>
+    </secition>
+    <section>
+      <h2 class="text-2xl header-main-subtitle">Latest</h2>
+    </section>
   </main>
 </Layout>
 
 <style>
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
   .header-main-subtitle {
-    font-size: 2rem;
     padding-bottom: 1rem;
   }
 
+  /* BANNER */
+  .banner-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .banner-info-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .banner-info-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.5rem;
+    background-color: black;
+    padding: 2rem;
+    border-radius: 0rem 0rem 0.5rem 0.5rem;
+    color: white;
+  }
+
+  .banner-image {
+    object-fit: cover;
+    border-radius: 0.5rem 0.5rem 0rem 0rem;
+    width: 100%;
+    height: 100%;
+  }
+  .banner-label {
+    color: grey;
+  }
+  .banner-description {
+    margin-top: 0.75rem;
+  }
+
+  .button-banner-link {
+    align-self: end;
+  }
+  .button-banner {
+    background-color: black;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+    transition:
+      color,
+      background-color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .button-banner:hover {
+    color: black;
+    background-color: white;
+  }
+  /* GRID */
   .card-grid {
     display: grid;
     justify-content: center;
@@ -44,6 +129,23 @@ import { data } from "../../public/data";
   }
 
   @media (min-width: 768px) {
+    .banner-container {
+      grid-template-columns: 1.25fr 1fr;
+      grid-template-rows: 1fr;
+    }
+
+    .banner-container > img {
+      order: 1;
+    }
+
+    .banner-info-wrapper {
+      border-radius: 0.5rem 0rem 0rem 0.5rem;
+    }
+
+    .banner-image {
+      max-height: initial;
+      border-radius: 0rem 0.5rem 0.5rem 0rem;
+    }
     .card-grid {
       grid-template-columns: repeat(4, 1fr);
     }

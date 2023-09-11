@@ -4,13 +4,19 @@
     gap: 0.5rem;
 }
 
-.kits-button {
+
+.kits-button,
+.kits-button-deskmats,
+.kits-button-collabs,
+.kits-button-renders {
     padding: 5px 10px 5px 10px;
     border: 1px solid black;
     outline: none;
     background-color: white;
     cursor: pointer;
 }
+
+
 
 .active {
     color: white;

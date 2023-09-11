@@ -2,7 +2,12 @@
     position: relative;
     overflow: hidden;
     width: 100%;
-    max-width: 500px;
+}
+
+.carousel-extras-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .carousel-slide-container {
@@ -13,12 +18,10 @@
     display: flex;
     border-radius: 0.5rem;
     transition: transform 0.3s ease-in-out;
-
 }
 
 .carousel-image {
-    width: initial;
-    width: 100%;
+    min-width: 100%;
     border-radius: 0.5rem;
 }
 
@@ -67,12 +70,14 @@
 .carousel-dots-container {
     display: flex;
     justify-content: center;
-
     gap: 0.5rem;
     margin-top: 0.5rem;
 }
 
-.carousel-dot {
+.carousel-dot,
+.extra-dot-deskmats,
+.extra-dot-collabs,
+.extra-dot-renders {
     display: inline-block;
     width: 10px;
     height: 10px;
@@ -85,16 +90,11 @@
     background-color: #333;
 }
 
-
-@media (min-width: 500px) {
-    .carousel-container {
-        max-width: 450px;
-    }
-
-    .carousel-image {
-        min-width: 450px;
-    }
+.extra-dots {
+    display: flex !important;
 }
+
+
 
 @media (min-width: 768px) {
     .mini-thumbnail-container {
@@ -108,27 +108,4 @@
     .carousel-dots-container {
         display: none;
     }
-}
-
-@media (min-width: 919px) {
-    .carousel-container {
-        max-width: 440px;
-    }
-
-    .carousel-image {
-        min-width: 440px;
-    }
-
-}
-
-@media (min-width: 920px) {
-    .carousel-container {
-        max-width: 500px;
-    }
-
-    .carousel-image {
-        min-width: 500px;
-    }
-
-
 }

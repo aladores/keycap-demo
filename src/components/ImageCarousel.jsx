@@ -21,25 +21,11 @@ export default function ImageCarousel({ kits }) {
 
   useEffect(() => {
     moveSlide();
-    setActive();
   }, [$index]);
 
   function moveSlide() {
     const slideContainer = document.querySelector(".carousel-slide");
     slideContainer.style.transform = `translateX(-${$index * 100}%)`;
-  }
-
-  function setActive() {
-    const dots = document.querySelectorAll(".carousel-dot");
-    const thumbnails = document.querySelectorAll(".mini-thumbnail");
-
-    dots.forEach((dot, index) => {
-      dot.classList.toggle("active", index === $index);
-    });
-
-    thumbnails.forEach((thumbnail, index) => {
-      thumbnail.classList.toggle("active", index === $index);
-    });
   }
 
   const leftArrowElement = () => {
@@ -86,7 +72,7 @@ export default function ImageCarousel({ kits }) {
           return (
             <img
               src={item.imageSrc}
-              className="mini-thumbnail"
+              className={`mini-thumbnail ${index === $index ? " active" : ""}`}
               key={index}
               onClick={() => {
                 handleKitClick(index);
@@ -99,7 +85,7 @@ export default function ImageCarousel({ kits }) {
         {kits.map((item, index) => {
           return (
             <div
-              className="carousel-dot"
+              className={`carousel-dot ${index === $index ? " active" : ""}`}
               onClick={() => {
                 handleKitClick(index);
               }}

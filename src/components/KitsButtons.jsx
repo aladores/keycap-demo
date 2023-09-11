@@ -13,22 +13,12 @@ export default function KitsButtons({ kits, onChangeKit }) {
   useEffect(() => {
     setIndex(0);
   }, []);
-  useEffect(() => {
-    setActive();
-  }, [$index]);
-
-  function setActive() {
-    const button = document.querySelectorAll(".kits-button");
-    button.forEach((button, index) => {
-      button.classList.toggle("active", index === $index);
-    });
-  }
 
   return (
     <div className="kits-button-container">
       {kits.map((item, index) => (
         <button
-          className="kits-button"
+          className={`kits-button ${index === $index ? " active" : ""}`}
           onClick={() => handleButtonClick(index)}
           key={index}
         >

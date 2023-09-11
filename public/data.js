@@ -66,9 +66,22 @@ export const data = [
                 shipped: "April 2022"
             },
             deskmats: [
-                { name: "Disintegration", imageSrc: "https://oblotzky.industries/cdn/shop/products/deskmat_disintegration_1080x.jpg?v=1601827941" },
-                { name: "Diffraction", imageSrc: "https://oblotzky.industries/cdn/shop/products/deskmat_diffraction_1080x.jpg?v=1601827583" },
-                { name: "Division", imageSrc: "https://oblotzky.industries/cdn/shop/products/deskmat_division_720x.jpg?v=1601827583" },
+                { name: "Wave", imageSrc: "https://store.projectkeyboard.com/cdn/shop/products/Deskmat-Wave-min_64d9ba95-26bd-49a9-8431-89c18328e6a0_1400x.jpg?v=1655546296" },
+                { name: "Endgame", imageSrc: "https://store.projectkeyboard.com/cdn/shop/products/Deskmat-Endgame-min_e79e181a-3894-4cba-bd44-bc63c214b36d_1400x.jpg?v=1655546296" },
+                { name: "Square", imageSrc: "https://store.projectkeyboard.com/cdn/shop/products/Deskmat-Square-min_f877eaad-0253-4342-9be6-6997cf89824c_1400x.jpg?v=1655546297" },
+            ],
+            collabs: [
+                { name: "RAMA x Knife - Gold PVD Brass", imageSrc: "https://store.projectkeyboard.com/cdn/shop/products/RW-MSTRP-R.4_d4d7a487-3cb0-41a4-94e1-7c5fcee6e5ed_1400x.png?v=1655546297" },
+                { name: "RAMA x Knife - Black PVD Brass", imageSrc: "https://store.projectkeyboard.com/cdn/shop/products/RW-MSTRP-R.2_08a62942-c9fc-48d2-a885-f900b83b7d27_1400x.png?v=1655546297" },
+                { name: "RAMA x Master - Gold PVD Brass", imageSrc: "https://store.projectkeyboard.com/cdn/shop/products/RW-MSTRP-R.9_a97b4a36-ab9a-47e8-bfce-5dd6580cc92c_1400x.png?v=1655546297" },
+            ],
+            renders: [
+                { name: "J80", imageSrc: "https://store.projectkeyboard.com/cdn/shop/products/J80_latin_top_0a6ba48b-fa3f-4082-892c-d21b6a355a2e_1400x.png?v=1655546297" },
+                { name: "KBDfans KBD19x", imageSrc: "https://www.deskhero.ca/cdn/shop/products/DLDR5FB_5b761e20-132b-4adc-b04a-b85d4a5ce530_942x497.jpg?v=1649958096" },
+                { name: "Rama Koyu", imageSrc: "https://www.deskhero.ca/cdn/shop/products/M5XFyYM_04bc95a3-240e-483d-8e8c-c612652520e4_942x497.jpg?v=1649958096" },
+                { name: "KBDFans Tofu", imageSrc: "https://www.deskhero.ca/cdn/shop/products/Ny4zXl5_86d25d46-7268-4cb4-8634-6be9f42fc971_942x497.jpg?v=1649958096" },
+                // { name: "HEX.3C", imageSrc: "" },
+
             ],
         },
     },
@@ -100,9 +113,22 @@ export const data = [
                 shipped: "January 2023"
             },
             deskmats: [
-                { name: "Disintegration", imageSrc: "https://oblotzky.industries/cdn/shop/products/deskmat_disintegration_1080x.jpg?v=1601827941" },
-                { name: "Diffraction", imageSrc: "https://oblotzky.industries/cdn/shop/products/deskmat_diffraction_1080x.jpg?v=1601827583" },
-                { name: "Division", imageSrc: "https://oblotzky.industries/cdn/shop/products/deskmat_division_720x.jpg?v=1601827583" },
+                { name: "Standard", imageSrc: "https://oblotzky.industries/cdn/shop/products/gmk_metropolis_2_deskmat_01_standard_720x.jpg?v=1617287074" },
+                { name: "Midnight", imageSrc: "https://oblotzky.industries/cdn/shop/products/gmk_metropolis_2_deskmat_02_midnight_720x.jpg?v=1617287070" },
+            ],
+            collabs: [
+                { name: "RAMA x Metropolis Novelty", imageSrc: "https://oblotzky.industries/cdn/shop/products/gmk_metropolis_2_rama_01_novelty_720x.jpg?v=1617287896" },
+                { name: "RAMA x Metropolis Enter", imageSrc: "https://oblotzky.industries/cdn/shop/products/gmk_metropolis_2_rama_02_enter_720x.jpg?v=1617287896" },
+            ],
+            renders: [
+                { name: "Render 1", imageSrc: "https://oblotzky.industries/cdn/shop/products/gmk_metropolis_2_keyboard_sar_persp_front_low_720x.jpg?v=1617285997" },
+                { name: "Render 2", imageSrc: "https://oblotzky.industries/cdn/shop/products/gmk_metropolis_2_keyboard_no160rev1_persp_angled_right_720x.jpg?v=1617285996" },
+                { name: "Render 3", imageSrc: "https://oblotzky.industries/cdn/shop/products/gmk_metropolis_2_ais65_persp_top_angled_720x.jpg?v=1617285998" },
+                { name: "Render 4", imageSrc: "https://oblotzky.industries/cdn/shop/products/gmk_metropolis_2_keyboard_m60a_persp_front_low_720x.jpg?v=1617285997" },
+                { name: "Render 4", imageSrc: "https://oblotzky.industries/cdn/shop/products/gmk_metropolis_2_keyboard_no2rev1wk_persp_right_close_720x.jpg?v=1617285996" },
+
+                // { name: "HEX.3C", imageSrc: "" },
+
             ],
 
         },
@@ -134,11 +160,22 @@ export const data = [
                 shipped: "April 2020"
             },
             deskmats: [
-                { name: "Disintegration", imageSrc: "https://oblotzky.industries/cdn/shop/products/deskmat_disintegration_1080x.jpg?v=1601827941" },
-                { name: "Diffraction", imageSrc: "https://oblotzky.industries/cdn/shop/products/deskmat_diffraction_1080x.jpg?v=1601827583" },
-                { name: "Division", imageSrc: "https://oblotzky.industries/cdn/shop/products/deskmat_division_720x.jpg?v=1601827583" },
+                { name: "Deskmat", imageSrc: "https://cannonkeys.com/cdn/shop/products/v20ozB4_7236efe2-c4e1-460b-80d7-21a38b5e6584_1512x.jpg?v=1597458422" },
+            ],
+            collabs: [
+                { name: "RAMA Préparer Enter", imageSrc: "https://dailyclack.com/cdn/shop/products/iNVCk2d_1400x.png?v=1569891273" },
+                { name: "RAMA Bean", imageSrc: "https://dailyclack.com/cdn/shop/products/90ExGPX_1400x.png?v=1569891273" },
+            ],
+            renders: [
+                { name: "Render 1", imageSrc: "https://dailyclack.com/cdn/shop/products/think_4_1400x.png?v=1569891273" },
+                { name: "Render 2", imageSrc: "https://dailyclack.com/cdn/shop/products/Brutal_Angle_1400x.jpg?v=1569891273" },
+                { name: "Render 3", imageSrc: "https://dailyclack.com/cdn/shop/products/IMG_2854_1400x.PNG?v=1569891273" },
+                { name: "Render 4", imageSrc: "https://dailyclack.com/cdn/shop/products/S75_Top_1400x.jpg?v=1569891273" },
+                { name: "Render 5", imageSrc: "https://dailyclack.com/cdn/shop/products/910_Top_4958843c-2e65-4dfb-ad2d-8719957427e6_1400x.jpg?v=1569891273" },
             ],
         },
     },
 
 ];
+
+

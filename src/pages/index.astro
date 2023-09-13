@@ -1,22 +1,33 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
+import data from "../../public/data.json";
+console.log(data.keycaps);
 
-import { data } from "../../public/data";
+const featuredData = data.keycaps.filter((item) => {
+  return item.featured === true;
+});
+console.log(featuredData);
+const bannerData = data.keycaps.filter((item) => {
+  return item.banner === true;
+});
 ---
 
 <Layout title="Welcome to Astro.">
   <main class="main-container">
     <section class="banner-container">
-      <img src={data[0].attributes.renders[0].imageSrc} class="banner-image" />
+      <img
+        src={bannerData[0].attributes.renders[0].imageSrc}
+        class="banner-image"
+      />
       <div class="banner-info-wrapper">
         <div class="banner-info-container">
           <p class="text-small banner-label">
-            {data[0].attributes.designer.toUpperCase()}
+            {bannerData[0].attributes.designer.toUpperCase()}
           </p>
-          <h3 class="text-xl">{data[0].attributes.title}</h3>
+          <h3 class="text-xl">{bannerData[0].attributes.title}</h3>
           <p class="text-small banner-description">
-            {data[0].attributes.description}
+            {bannerData[0].attributes.description}
           </p>
         </div>
 
@@ -25,26 +36,24 @@ import { data } from "../../public/data";
         </a>
       </div>
     </section>
-    <secition>
+    <section>
       <h2 class="text-2xl header-main-subtitle">Featured</h2>
       <ul role="list" class="card-grid">
         {
-          data
-            .filter((item) => {
-              return item.featured === true;
-            })
-            .map((item) => {
-              return (
-                <Card
-                  id={item.id}
-                  title={item.attributes.title}
-                  imageSrc={item.attributes.imageSrc}
-                />
-              );
-            })
+          featuredData.map((item) => {
+            return (
+              <Card
+                id={item.id}
+                title={item.attributes.title}
+                imageSrc={item.attributes.kits[0].imageSrc}
+                accentColor={item.attributes.colors[1].color.hex}
+                designer={item.attributes.designer}
+              />
+            );
+          })
         }
       </ul>
-    </secition>
+    </section>
     <section>
       <h2 class="text-2xl header-main-subtitle">Latest</h2>
     </section>
@@ -118,7 +127,7 @@ import { data } from "../../public/data";
   .card-grid {
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
 
     gap: 1.5rem;
   }
@@ -147,7 +156,7 @@ import { data } from "../../public/data";
       border-radius: 0rem 0.5rem 0.5rem 0rem;
     }
     .card-grid {
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(3, 1fr);
     }
   }
 </style>

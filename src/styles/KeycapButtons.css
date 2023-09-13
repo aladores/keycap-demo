@@ -1,0 +1,23 @@
+.keycap-button-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.keycap-button,
+.keycap-button-deskmats,
+.keycap-button-collabs,
+.keycap-button-renders {
+    padding: 5px 10px 5px 10px;
+    border: 1px solid black;
+    outline: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+.active {
+    color: white;
+    background-color: black;
+
+    transition: all 0.1s;
+}

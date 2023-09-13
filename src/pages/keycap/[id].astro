@@ -2,26 +2,28 @@
 import Layout from "../../layouts/Layout.astro";
 import ImageCarousel from "../../components/ImageCarousel.jsx";
 import ImageCarouselExtras from "../../components/ImageCarouselExtras.jsx";
-import KitsButtons from "../../components/KitsButtons.jsx";
+import KeycapButtons from "../../components/KeycapButtons.jsx";
 import PriceTable from "../../components/PriceTable.astro";
 import ColorBlock from "../../components/ColorBlock.astro";
 
-import { data } from "../../../public/data";
+import data from "../../../public/data.json";
 
 const { id } = Astro.params;
-const response = data.filter((item) => {
+const response = data.keycaps.filter((item)=>{
   return id === item.id;
-});
+})
+
+console.log(response[0].attributes.collabs);
 ---
 
 <Layout title="Keycap demo">
-  <section>
+  <main>
     <div class="keycap-info-wrapper">
-      <div class="keycap-info-container">
+      <section class="keycap-info-container">
         <div class="keycap-carousel-container">
           <ImageCarousel client:load kits={response[0].attributes.kits} />
         </div>
-        <main class="keycap-main-info-container">
+        <div class="keycap-main-info-container">
           <div>
             <h2 class="text-3xl">{response[0].attributes.title}</h2>
             <div class="keycap-tags-container">
@@ -43,17 +45,17 @@ const response = data.filter((item) => {
           </div>
           <p class="text-base">{response[0].attributes.description}</p>
           <div>
-            <h3 class="text-xl keycap-header-three">Kits</h3>
-            <KitsButtons client:load kits={response[0].attributes.kits} />
+            <h3 class="text-xl">Kits</h3>
+            <KeycapButtons client:load kits={response[0].attributes.kits} />
           </div>
 
           <div>
-            <h3 class="text-xl keycap-header-three">Colors</h3>
+            <h3 class="text-xl">Colors</h3>
             <ColorBlock colors={response[0].attributes.colors} />
           </div>
 
           <div>
-            <h3 class="text-xl keycap-header-three">Pricing</h3>
+            <h3 class="text-xl">Pricing</h3>
             {
               Object.keys(response[0].attributes.kits[0].price).length !== 0 ? (
                 <PriceTable kits={response[0].attributes.kits} />
@@ -62,11 +64,11 @@ const response = data.filter((item) => {
               )
             }
           </div>
-        </main>
-      </div>
-      <div class="keycap-extras-container">
+        </div>
+      </section>
+      <section class="keycap-extras-container">
         <div class="test2">
-          <h3 class="text-xl keycap-header-three">Deskmats</h3>
+          <h3 class="text-xl">Deskmats</h3>
           <ImageCarouselExtras
             client:load
             extras={response[0].attributes.deskmats}
@@ -75,7 +77,7 @@ const response = data.filter((item) => {
         </div>
 
         <div class="test2">
-          <h3 class="text-xl keycap-header-three">Collabs</h3>
+          <h3 class="text-xl">Collabs</h3>
           <ImageCarouselExtras
             client:load
             extras={response[0].attributes.collabs}
@@ -84,30 +86,30 @@ const response = data.filter((item) => {
         </div>
 
         <div class="test2">
-          <h3 class="text-xl keycap-header-three">Renders</h3>
+          <h3 class="text-xl">Renders</h3>
           <ImageCarouselExtras
             client:load
             extras={response[0].attributes.renders}
             element="renders"
           />
         </div>
-      </div>
-      <div class="reference-container">
+      </section>
+      <section class="reference-container">
         <p>Reference:</p>
         <a href={response[0].attributes.groupBuyLink} class="reference-link"
           >Link</a
         >
-      </div>
+      </section>
     </div>
-  </section>
-
+  </main>
+</Layout>
   <style>
     .keycap-info-wrapper {
       display: flex;
       flex-direction: column;
       gap: 1rem;
     }
-    .keycap-header-three {
+     {
       padding-bottom: 0.5rem;
     }
 
@@ -172,4 +174,4 @@ const response = data.filter((item) => {
       }
     }
   </style>
-</Layout>
+

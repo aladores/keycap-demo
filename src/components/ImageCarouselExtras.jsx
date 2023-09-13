@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import "../styles/ImageCarousel.css";
-import "../styles/KitsButtons.css";
+import "../styles/KeycapButtons.css";
 export default function ImageCarouselExtras({ extras, element }) {
   const [currIndex, setCurrIndex] = useState(0);
 
@@ -59,7 +59,7 @@ export default function ImageCarouselExtras({ extras, element }) {
               return (
                 <img
                   src={item.imageSrc}
-                  className="carousel-image"
+                  className="carousel-image extras-image"
                   key={index}
                 />
               );
@@ -68,7 +68,7 @@ export default function ImageCarouselExtras({ extras, element }) {
           {leftArrowElement()}
           {rightArrowElement()}
         </div>
-        {/* <div className={`carousel-dots-container extra-dots`}>
+        <div className={`carousel-dots-container flex`}>
           {extras.map((item, index) => {
             return (
               <div
@@ -82,12 +82,12 @@ export default function ImageCarouselExtras({ extras, element }) {
               ></div>
             );
           })}
-        </div> */}
+        </div>
       </div>
-      <div className="kits-button-container extras-button-container">
+      <div className="keycap-button-container extras-button-container">
         {extras.map((item, index) => (
           <button
-            className={`kits-button-${element} ${
+            className={`keycap-button-${element} ${
               index === currIndex ? " active" : ""
             }`}
             onClick={() => handleClick(index)}

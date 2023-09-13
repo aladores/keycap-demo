@@ -12,8 +12,6 @@ const { id } = Astro.params;
 const response = data.keycaps.filter((item)=>{
   return id === item.id;
 })
-
-console.log(response[0].attributes.collabs);
 ---
 
 <Layout title="Keycap demo">

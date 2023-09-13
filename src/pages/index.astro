@@ -2,12 +2,11 @@
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
 import data from "../../public/data.json";
-console.log(data.keycaps);
 
 const featuredData = data.keycaps.filter((item) => {
   return item.featured === true;
 });
-console.log(featuredData);
+
 const bannerData = data.keycaps.filter((item) => {
   return item.banner === true;
 });

@@ -1,5 +1,5 @@
-import { useEffect } from "react";
-import { useStore } from "@nanostores/react";
+import { useEffect } from "preact/hooks";
+import { useStore } from "@nanostores/preact";
 import { index, setIndex } from "../stores/indexStore";
 
 import "../styles/KeycapButtons.css";

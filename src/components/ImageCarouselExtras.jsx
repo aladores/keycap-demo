@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect } from "preact/hooks";
 import "../styles/ImageCarousel.css";
 import "../styles/KeycapButtons.css";
 export default function ImageCarouselExtras({ extras, element }) {

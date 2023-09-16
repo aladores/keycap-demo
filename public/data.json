@@ -5,7 +5,15 @@
         "collabs": [
           {
             "imageSrc": "/assets/gmk_noire/collabs/collab_1.webp",
-            "name": "Salvun Aluminum"
+            "name": "Salvun x Aluminum"
+          },
+          {
+            "imageSrc": "/assets/gmk_noire/collabs/collab_2.webp",
+            "name": "Salvun x Copper"
+          },
+          {
+            "imageSrc": "/assets/gmk_noire/collabs/collab_3.webp",
+            "name": "Salvun x Brass"
           }
         ],
         "colors": [
@@ -60,18 +68,18 @@
             "imageSrc": "/assets/gmk_noire/kits/kit_1.webp",
             "name": "Base",
             "price": {
-              "CAD": 190,
-              "EUR": 129,
-              "USD": 140
+              "USD": "140.00",
+              "EUR": "129.00",
+              "CAD": "190.00"
             }
           },
           {
             "imageSrc": "/assets/gmk_noire/kits/kit_2.webp",
             "name": "Novelties",
             "price": {
-              "CAD": 62,
-              "EUR": 39,
-              "USD": 45
+              "USD": "45.00",
+              "EUR": "39.00",
+              "CAD": "62.00"
             }
           }
         ],
@@ -161,69 +169,69 @@
         ],
         "kits": [
           {
-            "imageSrc": "/assets/gmk_masterpiece/kits/kit_4.webp",
+            "imageSrc": "/assets/gmk_masterpiece/kits/kit_1.webp",
             "name": "Base",
             "price": {
-              "USD": 140.0,
-              "EUR": 139.0,
-              "AUD": 230.0,
-              "SGD": 198.0,
-              "CAD": 190.0
+              "USD": "129.00",
+              "EUR": "139.00",
+              "AUD": "230.00",
+              "SGD": "198.00",
+              "CAD": "190.00"
             }
           },
           {
             "imageSrc": "/assets/gmk_masterpiece/kits/kit_2.webp",
             "name": "Clarity",
             "price": {
-              "USD": 45.0,
-              "EUR": 56.0,
-              "AUD": 95.0,
-              "SGD": 75.0,
-              "CAD": 73.0
+              "USD": "49.00",
+              "EUR": "56.00",
+              "AUD": "95.00",
+              "SGD": "75.00",
+              "CAD": "73.00"
             }
           },
           {
             "imageSrc": "/assets/gmk_masterpiece/kits/kit_3.webp",
             "name": "Preserving",
             "price": {
-              "USD": 45.0,
-              "EUR": 38.0,
-              "AUD": 60.0,
-              "SGD": 54.0,
-              "CAD": 52.0
+              "USD": "35.00",
+              "EUR": "38.00",
+              "AUD": "60.00",
+              "SGD": "54.00",
+              "CAD": "52.00"
             }
           },
           {
-            "imageSrc": "/assets/gmk_masterpiece/kits/kit_1.webp",
+            "imageSrc": "/assets/gmk_masterpiece/kits/kit_4.webp",
             "name": "West",
             "price": {
-              "USD": 45.0,
-              "EUR": 66.0,
-              "AUD": 100.0,
-              "SGD": 91.0,
-              "CAD": 88.0
+              "USD": "59.00",
+              "EUR": "66.00",
+              "AUD": "100.00",
+              "SGD": "91.00",
+              "CAD": "88.00"
             }
           }
         ],
         "renders": [
           {
-            "name": "Render 1",
+            "name": "J80",
             "imageSrc": "/assets/gmk_masterpiece/renders/render_1.webp"
           },
           {
-            "name": "Render 2",
+            "name": "KBDfans KBD19x",
             "imageSrc": "/assets/gmk_masterpiece/renders/render_2.webp"
           },
           {
-            "name": "Render 3",
+            "name": "RAMA Koyu",
             "imageSrc": "/assets/gmk_masterpiece/renders/render_3.webp"
           },
           {
-            "name": "Render 4",
+            "name": "KBDfans Tofu",
             "imageSrc": "/assets/gmk_masterpiece/renders/render_4.webp"
           },
           {
-            "name": "Render 5",
+            "name": "HEX.3C",
             "imageSrc": "/assets/gmk_masterpiece/renders/render_5.webp"
           }
         ],
@@ -314,7 +322,7 @@
             "imageSrc": "/assets/gmk_metropolis_r2/kits/kit_1.webp"
           },
           {
-            "name": "Midnight",
+            "name": "Blocks",
             "price": {},
             "imageSrc": "/assets/gmk_metropolis_r2/kits/kit_2.webp"
           },
@@ -324,14 +332,19 @@
             "imageSrc": "/assets/gmk_metropolis_r2/kits/kit_3.webp"
           },
           {
-            "name": "Turnpike",
+            "name": "Compact",
             "price": {},
             "imageSrc": "/assets/gmk_metropolis_r2/kits/kit_4.webp"
           },
           {
-            "name": "Compact",
+            "name": "Turnpike",
             "price": {},
             "imageSrc": "/assets/gmk_metropolis_r2/kits/kit_5.webp"
+          },
+          {
+            "name": "Midnight",
+            "price": {},
+            "imageSrc": "/assets/gmk_metropolis_r2/kits/kit_6.webp"
           }
         ],
         "renders": [
@@ -359,7 +372,6 @@
       "featured": true,
       "id": "101"
     },
-
     {
       "attributes": {
         "collabs": [
@@ -414,48 +426,48 @@
           {
             "name": "Base",
             "price": {
-              "USD": 129.99,
-              "CAD": 175,
-              "EUR": 145,
-              "GBP": 128,
-              "CNY": 96900,
-              "AUD": 187
+              "USD": "130.00",
+              "CAD": "175.00",
+              "EUR": "145.00",
+              "GBP": "128.00",
+              "CNY": "969.00",
+              "AUD": "187.00"
             },
             "imageSrc": "/assets/gmk_coral_r2/kits/kit_1.webp"
           },
           {
             "name": "Coral Relief",
             "price": {
-              "USD": 125,
-              "CAD": 165,
-              "EUR": 140,
-              "GBP": 123,
-              "CNY": 93900,
-              "AUD": 180
+              "USD": "125.00",
+              "CAD": "165.00",
+              "EUR": "140.00",
+              "GBP": "123.00",
+              "CNY": "939.00",
+              "AUD": "180.00"
             },
             "imageSrc": "/assets/gmk_coral_r2/kits/kit_2.webp"
           },
           {
             "name": "Novelties",
             "price": {
-              "USD": 35,
-              "CAD": 48,
-              "EUR": 39,
-              "GBP": 34,
-              "CNY": 24900,
-              "AUD": 50
+              "USD": "35.00",
+              "CAD": "48.00",
+              "EUR": "39.00",
+              "GBP": "34.00",
+              "CNY": "249.00",
+              "AUD": "50.00"
             },
             "imageSrc": "/assets/gmk_coral_r2/kits/kit_3.webp"
           },
           {
             "name": "Spacebar",
             "price": {
-              "USD": 25.99,
-              "CAD": 38,
-              "EUR": 28,
-              "GBP": 25,
-              "CNY": 17900,
-              "AUD": 36
+              "USD": "25.00",
+              "CAD": "38.00",
+              "EUR": "28.00",
+              "GBP": "25.00",
+              "CNY": "179.00",
+              "AUD": "36.00"
             },
             "imageSrc": "/assets/gmk_coral_r2/kits/kit_4.webp"
           }
@@ -487,7 +499,7 @@
       },
       "banner": false,
       "featured": false,
-      "id": "4"
+      "id": "1"
     },
     {
       "attributes": {
@@ -530,27 +542,27 @@
           {
             "name": "Base",
             "price": {
-              "USD": 129,
-              "EUR": 145,
-              "AUD": 195
+              "USD": "129.00",
+              "EUR": "145.00",
+              "AUD": "195.00"
             },
             "imageSrc": "/assets/gmk_peach_blossom_r2/kits/kit_1.webp"
           },
           {
             "name": "Hangul",
             "price": {
-              "USD": 42,
-              "EUR": 43,
-              "AUD": 60
+              "USD": "42.00",
+              "EUR": "43.00",
+              "AUD": "60.00"
             },
             "imageSrc": "/assets/gmk_peach_blossom_r2/kits/kit_2.webp"
           },
           {
             "name": "Spacebars",
             "price": {
-              "USD": 28,
-              "EUR": 31,
-              "AUD": 40
+              "USD": "28.00",
+              "EUR": "31.00",
+              "AUD": "40.00"
             },
             "imageSrc": "/assets/gmk_peach_blossom_r2/kits/kit_2.webp"
           }
@@ -582,7 +594,7 @@
       },
       "banner": false,
       "featured": false,
-      "id": "5"
+      "id": "2"
     },
     {
       "attributes": {
@@ -653,56 +665,56 @@
           {
             "name": "Hiragana Base",
             "price": {
-              "USD": 135,
-              "CAD": 170,
-              "EUR": 148,
-              "GBP": 105.83,
-              "CNY": 969,
-              "PHP": 7850,
-              "CLP": 138990,
-              "AUD": 196
+              "USD": "135.00",
+              "CAD": "170.00",
+              "EUR": "148.00",
+              "GBP": "105.83",
+              "CNY": "969.00",
+              "PHP": "7,850.00",
+              "CLP": "138,990.00",
+              "AUD": "196.00"
             },
             "imageSrc": "/assets/gmk_cinder/kits/kit_1.webp"
           },
           {
             "name": "Latin Base",
             "price": {
-              "USD": 135,
-              "CAD": 170,
-              "EUR": 148,
-              "GBP": 105.83,
-              "CNY": 969,
-              "PHP": 7850,
-              "CLP": 138990,
-              "AUD": 196
+              "USD": "135.00",
+              "CAD": "170.00",
+              "EUR": "148.00",
+              "GBP": "105.83",
+              "CNY": "969.00",
+              "PHP": "7,850.00",
+              "CLP": "138,990.00",
+              "AUD": "196.00"
             },
             "imageSrc": "/assets/gmk_cinder/kits/kit_2.webp"
           },
           {
             "name": "Novelties",
             "price": {
-              "USD": 49,
-              "CAD": 62,
-              "EUR": 54,
-              "GBP": 38.33,
-              "CNY": 339,
-              "PHP": 2750,
-              "CLP": 53990,
-              "AUD": 71
+              "USD": "135.00",
+              "CAD": "170.00",
+              "EUR": "148.00",
+              "GBP": "105.83",
+              "CNY": "969.00",
+              "PHP": "7,850.00",
+              "CLP": "138,990.00",
+              "AUD": "196.00"
             },
             "imageSrc": "/assets/gmk_cinder/kits/kit_3.webp"
           },
           {
             "name": "Spacebars",
             "price": {
-              "USD": 29,
-              "CAD": 38,
-              "EUR": 29,
-              "GBP": 22.5,
-              "CNY": 199,
-              "PHP": 1600,
-              "CLP": 28900,
-              "AUD": 42
+              "USD": "29.00",
+              "CAD": "38.00",
+              "EUR": "29.00",
+              "GBP": "22.50",
+              "CNY": "199.00",
+              "PHP": "1,600.00",
+              "CLP": "28,900.00",
+              "AUD": "42.00"
             },
             "imageSrc": "/assets/gmk_cinder/kits/kit_4.webp"
           }
@@ -738,7 +750,7 @@
       },
       "banner": false,
       "featured": false,
-      "id": "6"
+      "id": "3"
     }
   ]
 }

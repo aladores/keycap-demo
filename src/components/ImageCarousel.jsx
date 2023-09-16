@@ -8,7 +8,7 @@ import {
 } from "../stores/indexStore";
 import "../styles/ImageCarousel.css";
 
-export default function ImageCarousel({ kits }) {
+export default function ImageCarousel({ kits, id }) {
   const $index = useStore(index);
 
   function handleKitClick(index) {
@@ -56,7 +56,10 @@ export default function ImageCarousel({ kits }) {
 
   return (
     <section className="carousel-container">
-      <div className="carousel-slide-container">
+      <div
+        className="carousel-slide-container"
+        style={`view-transition-name: record-${id};`}
+      >
         <div className="carousel-slide">
           {kits.map((item, index) => {
             return (

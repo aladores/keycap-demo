@@ -2,21 +2,27 @@
 
 ---
 
-<header>
-  <a href="/" style="display: inline-block;"
-    ><h1 class="text-2xl header-title">Keycap Demo</h1></a
-  >
+<header transition:persist="header" class="padding-bottom-1">
+  <div class="header-container padding-bottom-1">
+    <div class="header-link">
+      <a href="/" class="text-2xl text-bold header-link">Keycap Demo</a>
+    </div>
+    <div class="header-link">
+      <a href="/all" class="text-base header-link">GMK</a>
+    </div>
+  </div>
   <div class="grey-line"></div>
 </header>
 
 <style>
-  header {
-    padding-bottom: 1rem;
+  .header-container {
+    display: flex;
+    align-items: end;
+    gap: 1rem;
   }
-  .header-title {
-    max-width: 100%;
-    font-size: 1.5rem;
-    padding-bottom: 1rem;
+
+  .header-link:hover {
+    color: blue;
   }
 
   .grey-line {

@@ -11,7 +11,6 @@
   },
   "dependencies": {
     "@astrojs/preact": "^3.0.0",
-    "@astrojs/react": "^3.0.1",
     "@nanostores/preact": "^0.5.0",
     "@types/react": "^18.2.21",
     "@types/react-dom": "^18.2.7",

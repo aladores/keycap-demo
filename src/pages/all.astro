@@ -1,0 +1,89 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import data from "../../public/data.json";
+
+data.keycaps.sort((a, b) => (a.attributes.title > b.attributes.title ? 1 : -1));
+
+const keyCapHeaderSet = new Set(
+  data.keycaps.map((item) => {
+    return item.attributes.title.charAt(0);
+  })
+);
+---
+
+<Layout title="Keycap">
+  <main>
+    <h2 class="text-2xl padding-bottom-1">GMK Keycaps</h2>
+    <ul class="keycap-list">
+      {
+        Array.from(keyCapHeaderSet).map((item) => {
+          return (
+            <li class="padding-bottom-1">
+              <h3 class="text-2xl text-normal">{item}</h3>
+              <ul class="keycap-inner-list text-base">
+                {data.keycaps.map((keyCap) => {
+                  if (keyCap.attributes.title.charAt(0) === item) {
+                    return (
+                      <a href={`/keycap/${keyCap.id}`} class="keycap-list-link">
+                        <li class="keycap-list-item">
+                          <p>{keyCap.attributes.title}</p>
+                          <div class="keycap-color-container">
+                            {keyCap.attributes.colors.map((color, index) => {
+                              if (index > 2) {
+                                return;
+                              }
+                              return (
+                                <div
+                                  class="color-block"
+                                  style={`background-color:${color.color.hex}`}
+                                />
+                              );
+                            })}
+                          </div>
+                        </li>
+                      </a>
+                    );
+                  }
+                })}
+              </ul>
+            </li>
+          );
+        })
+      }
+    </ul>
+  </main>
+</Layout>
+
+<style>
+  .keycap-list {
+    display: inline-flex;
+    flex-direction: column;
+  }
+  .keycap-inner-list {
+    display: inline-flex;
+    flex-direction: column;
+  }
+
+  .keycap-list-item {
+    display: inline-flex;
+    align-items: center;
+    flex-grow: 0;
+    gap: 1rem;
+  }
+
+  .keycap-color-container {
+    display: flex;
+  }
+
+  .color-block {
+    height: 20px;
+    width: 20px;
+  }
+
+  @media (min-width: 640px) {
+  }
+
+  @media (min-width: 768px) {
+  }
+</style>

@@ -17,13 +17,17 @@ const response = data.keycaps.filter((item)=>{
 <Layout title="Keycap demo">
   <main>
     <div class="keycap-info-wrapper">
-      <section class="keycap-info-container">
+  
+    <section class="keycap-info-container">
+
+
+      
         <div class="keycap-carousel-container">
-          <ImageCarousel client:load kits={response[0].attributes.kits} />
+          <ImageCarousel client:load kits={response[0].attributes.kits} id={id} />
         </div>
         <div class="keycap-main-info-container">
           <div>
-            <h2 class="text-3xl">{response[0].attributes.title}</h2>
+            <h2 class="text-3xl">{response[0].attributes.manufacturer + " " + response[0].attributes.title}</h2>
             <div class="keycap-tags-container">
               <div>
                 <p class="text-small text-bold">Designed by</p>
@@ -65,39 +69,41 @@ const response = data.keycaps.filter((item)=>{
         </div>
       </section>
       <section class="keycap-extras-container">
-        <div class="test2">
-          <h3 class="text-xl">Deskmats</h3>
-          <ImageCarouselExtras
-            client:load
-            extras={response[0].attributes.deskmats}
-            element="deskmats"
-          />
-        </div>
-
-        <div class="test2">
-          <h3 class="text-xl">Collabs</h3>
-          <ImageCarouselExtras
-            client:load
-            extras={response[0].attributes.collabs}
-            element="collabs"
-          />
-        </div>
-
-        <div class="test2">
-          <h3 class="text-xl">Renders</h3>
-          <ImageCarouselExtras
-            client:load
-            extras={response[0].attributes.renders}
-            element="renders"
-          />
-        </div>
+        {response[0].attributes.deskmats.length !==0 && 
+          <div>
+            <h3 class="text-xl">Deskmats</h3>
+            <ImageCarouselExtras
+              client:load
+              extras={response[0].attributes.deskmats}
+              element="deskmats"
+            />
+          </div>}
+        {response[0].attributes.collabs.length !==0 && 
+          <div>
+            <h3 class="text-xl">Collabs</h3>
+            <ImageCarouselExtras
+              client:load
+              extras={response[0].attributes.collabs}
+              element="collabs"
+            />
+          </div>}
+        
+        {response[0].attributes.renders.length !==0 && 
+          <div>
+            <h3 class="text-xl">Renders</h3>
+            <ImageCarouselExtras
+              client:load
+              extras={response[0].attributes.renders}
+              element="renders"
+            />
+          </div>}
       </section>
       <section class="reference-container">
         <p>Reference:</p>
         <a href={response[0].attributes.groupBuyLink} class="reference-link"
           >Link</a
         >
-      </section>
+      </section> 
     </div>
   </main>
 </Layout>

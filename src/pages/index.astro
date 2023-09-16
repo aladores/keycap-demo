@@ -12,7 +12,7 @@ const bannerData = data.keycaps.filter((item) => {
 });
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Keycap">
   <main class="main-container">
     <section class="banner-container">
       <img
@@ -30,7 +30,7 @@ const bannerData = data.keycaps.filter((item) => {
           </p>
         </div>
 
-        <a class="button-banner-link" href={`/keycap/${1}`}>
+        <a class="button-banner-link" href={`/keycap/${0}`}>
           <button class="button-banner text-normal">VIEW MORE</button>
         </a>
       </div>
@@ -43,6 +43,7 @@ const bannerData = data.keycaps.filter((item) => {
             return (
               <Card
                 id={item.id}
+                manufacturer={item.attributes.manufacturer}
                 title={item.attributes.title}
                 imageSrc={item.attributes.kits[0].imageSrc}
                 accentColor={item.attributes.colors[1].color.hex}
@@ -53,9 +54,9 @@ const bannerData = data.keycaps.filter((item) => {
         }
       </ul>
     </section>
-    <section>
+    <!-- <section>
       <h2 class="text-2xl header-main-subtitle">Latest</h2>
-    </section>
+    </section> -->
   </main>
 </Layout>
 

@@ -364,8 +364,8 @@
       "attributes": {
         "collabs": [
           {
-            "imageSrc": "/assets/gmk_noire/collabs/collab_1.webp",
-            "name": "Salvun"
+            "imageSrc": "/assets/gmk_coral_r2/collabs/collab_1.webp",
+            "name": "Hibi"
           }
         ],
         "colors": [
@@ -399,80 +399,87 @@
         "designer": "HoodrowThrillson",
         "deskmats": [
           {
-            "imageSrc": "/assets/gmk_noire/deskmats/deskmat_3.webp",
+            "imageSrc": "/assets/gmk_coral_r2/deskmats/deskmat_1.webp",
             "name": "Deskmat 1"
-          },
-          {
-            "imageSrc": "/assets/gmk_noire/deskmats/deskmat_2.webp",
-            "name": "Deskmat 2"
           }
         ],
-        "groupBuyLink": "https://geekhack.org/index.php?topic=101926.0",
+        "groupBuyLink": "https://geekhack.org/index.php?topic=115782.0",
         "keyArt": [
           {
             "name:": "banner",
-            "imageSrc": "/assets/gmk_noire/keyArt/keyArt_1.webp"
+            "imageSrc": "/assets/gmk_coral_r2/keyArt/keyArt_1.webp"
           }
         ],
         "kits": [
           {
             "name": "Base",
             "price": {
-              "AUD": 199.0,
-              "EUR": 127.99,
-              "USD": 129.99
+              "USD": 129.99,
+              "CAD": 175,
+              "EUR": 145,
+              "GBP": 128,
+              "CNY": 96900,
+              "AUD": 187
             },
-            "imageSrc": "/assets/gmk_carbon_r1/kits/kits_1.webp"
+            "imageSrc": "/assets/gmk_coral_r2/kits/kit_1.webp"
           },
           {
             "name": "Coral Relief",
             "price": {
-              "AUD": 136.0,
-              "EUR": 87.99,
-              "USD": 84.99
+              "USD": 125,
+              "CAD": 165,
+              "EUR": 140,
+              "GBP": 123,
+              "CNY": 93900,
+              "AUD": 180
             },
-            "imageSrc": "/assets/gmk_carbon_r1/kits/kits_2.webp"
-          },
-          {
-            "name": "40s/Ortho Kit",
-            "price": {
-              "AUD": 64.0,
-              "EUR": 42.99,
-              "USD": 39.99
-            },
-            "imageSrc": "/assets/gmk_carbon_r1/kits/kits_2.webp"
-          },
-          {
-            "name": "Spacebar",
-            "price": {
-              "AUD": 40.0,
-              "EUR": 27.99,
-              "USD": 24.99
-            },
-            "imageSrc": "/assets/gmk_carbon_r1/kits/kits_2.webp"
+            "imageSrc": "/assets/gmk_coral_r2/kits/kit_2.webp"
           },
           {
             "name": "Novelties",
             "price": {
-              "AUD": 64.0,
-              "EUR": 42.99,
-              "USD": 39.99
+              "USD": 35,
+              "CAD": 48,
+              "EUR": 39,
+              "GBP": 34,
+              "CNY": 24900,
+              "AUD": 50
             },
-            "imageSrc": "/assets/gmk_carbon_r1/kits/kits_2.webp"
+            "imageSrc": "/assets/gmk_coral_r2/kits/kit_3.webp"
+          },
+          {
+            "name": "Spacebar",
+            "price": {
+              "USD": 25.99,
+              "CAD": 38,
+              "EUR": 28,
+              "GBP": 25,
+              "CNY": 17900,
+              "AUD": 36
+            },
+            "imageSrc": "/assets/gmk_coral_r2/kits/kit_4.webp"
           }
         ],
         "renders": [
           {
-            "name": "Prime_E",
-            "imageSrc": "/assets/gmk_carbon_r1/renders/render_1.webp"
+            "name": "Mimi",
+            "imageSrc": "/assets/gmk_coral_r2/renders/render_1.webp"
           },
           {
-            "name": "TGR 910",
-            "imageSrc": "/assets/gmk_carbon_r1/renders/render_1.webp"
+            "name": "Matrix 2.0",
+            "imageSrc": "/assets/gmk_coral_r2/renders/render_2.webp"
           },
           {
-            "name": "Fjell",
-            "imageSrc": "/assets/gmk_carbon_r1/renders/render_1.webp"
+            "name": "Matrix Vita",
+            "imageSrc": "/assets/gmk_coral_r2/renders/render_3.webp"
+          },
+          {
+            "name": "RS",
+            "imageSrc": "/assets/gmk_coral_r2/renders/render_4.webp"
+          },
+          {
+            "name": "Matrix 1.2og",
+            "imageSrc": "/assets/gmk_coral_r2/renders/render_5.webp"
           }
         ],
         "manufacturer": "GMK",
@@ -486,11 +493,11 @@
       "attributes": {
         "collabs": [
           {
-            "imageSrc": "/assets/gmk_noire/collabs/collab_1.webp",
+            "imageSrc": "/assets/gmk_peach_blossom_r2/collabs/collab_1.webp",
             "name": "HIBI X PEACH BLOSSOM R2"
           },
           {
-            "imageSrc": "/assets/gmk_noire/collabs/collab_1.webp",
+            "imageSrc": "/assets/gmk_peach_blossom_r2/collabs/collab_2.webp",
             "name": "Asero Foundry X PEACH BLOSSOM R2"
           }
         ],
@@ -523,51 +530,51 @@
           {
             "name": "Base",
             "price": {
-              "AUD": 195,
+              "USD": 129,
               "EUR": 145,
-              "USD": 129
+              "AUD": 195
             },
-            "imageSrc": "/assets/gmk_carbon_r1/kits/kits_1.webp"
+            "imageSrc": "/assets/gmk_peach_blossom_r2/kits/kit_1.webp"
           },
           {
             "name": "Hangul",
             "price": {
-              "AUD": 60,
+              "USD": 42,
               "EUR": 43,
-              "USD": 42
+              "AUD": 60
             },
-            "imageSrc": "/assets/gmk_carbon_r1/kits/kits_2.webp"
+            "imageSrc": "/assets/gmk_peach_blossom_r2/kits/kit_2.webp"
           },
           {
             "name": "Spacebars",
             "price": {
-              "AUD": 40,
+              "USD": 28,
               "EUR": 31,
-              "USD": 28
+              "AUD": 40
             },
-            "imageSrc": "/assets/gmk_carbon_r1/kits/kits_2.webp"
+            "imageSrc": "/assets/gmk_peach_blossom_r2/kits/kit_2.webp"
           }
         ],
         "renders": [
           {
             "name": "Render 1",
-            "imageSrc": "/assets/gmk_carbon_r1/renders/render_1.webp"
+            "imageSrc": "/assets/gmk_peach_blossom_r2/renders/render_1.webp"
           },
           {
             "name": "Render 2",
-            "imageSrc": "/assets/gmk_carbon_r1/renders/render_1.webp"
+            "imageSrc": "/assets/gmk_peach_blossom_r2/renders/render_1.webp"
           },
           {
             "name": "Render 3",
-            "imageSrc": "/assets/gmk_carbon_r1/renders/render_1.webp"
+            "imageSrc": "/assets/gmk_peach_blossom_r2/renders/render_1.webp"
           },
           {
             "name": "Render 4",
-            "imageSrc": "/assets/gmk_carbon_r1/renders/render_1.webp"
+            "imageSrc": "/assets/gmk_peach_blossom_r2/renders/render_1.webp"
           },
           {
             "name": "Render 5",
-            "imageSrc": "/assets/gmk_carbon_r1/renders/render_1.webp"
+            "imageSrc": "/assets/gmk_peach_blossom_r2/renders/render_1.webp"
           }
         ],
         "manufacturer": "GMK",
@@ -581,15 +588,15 @@
       "attributes": {
         "collabs": [
           {
-            "imageSrc": "/assets/gmk_noire/collabs/collab_1.webp",
+            "imageSrc": "/assets/gmk_cinder/collabs/collab_1.webp",
             "name": "THOK"
           },
           {
-            "imageSrc": "/assets/gmk_noire/collabs/collab_1.webp",
+            "imageSrc": "/assets/gmk_cinder/collabs/collab_2.webp",
             "name": "HIBI"
           },
           {
-            "imageSrc": "/assets/gmk_noire/collabs/collab_1.webp",
+            "imageSrc": "/assets/gmk_cinder/collabs/collab_3.webp",
             "name": "Asero Foundry"
           }
         ],
@@ -624,19 +631,19 @@
         "designer": "JPoc",
         "deskmats": [
           {
-            "imageSrc": "/assets/gmk_noire/deskmats/deskmat_3.webp",
+            "imageSrc": "/assets/gmk_cinder/deskmats/deskmat_1.webp",
             "name": "Eclipse"
           },
           {
-            "imageSrc": "/assets/gmk_noire/deskmats/deskmat_2.webp",
+            "imageSrc": "/assets/gmk_cinder/deskmats/deskmat_2.webp",
             "name": "Forge"
           },
           {
-            "imageSrc": "/assets/gmk_noire/deskmats/deskmat_2.webp",
+            "imageSrc": "/assets/gmk_cinder/deskmats/deskmat_3.webp",
             "name": "Coal"
           },
           {
-            "imageSrc": "/assets/gmk_noire/deskmats/deskmat_3.webp",
+            "imageSrc": "/assets/gmk_cinder/deskmats/deskmat_4.webp",
             "name": "Ash"
           }
         ],
@@ -646,61 +653,84 @@
           {
             "name": "Hiragana Base",
             "price": {
+              "USD": 135,
               "CAD": 170,
-              "EUR": 145,
-              "AUD": 195,
-              "USD": 135
+              "EUR": 148,
+              "GBP": 105.83,
+              "CNY": 969,
+              "PHP": 7850,
+              "CLP": 138990,
+              "AUD": 196
             },
-            "imageSrc": "/assets/gmk_carbon_r1/kits/kits_1.webp"
+            "imageSrc": "/assets/gmk_cinder/kits/kit_1.webp"
           },
           {
             "name": "Latin Base",
             "price": {
-              "AUD": 60,
-              "EUR": 43,
-              "USD": 134
+              "USD": 135,
+              "CAD": 170,
+              "EUR": 148,
+              "GBP": 105.83,
+              "CNY": 969,
+              "PHP": 7850,
+              "CLP": 138990,
+              "AUD": 196
             },
-            "imageSrc": "/assets/gmk_carbon_r1/kits/kits_2.webp"
+            "imageSrc": "/assets/gmk_cinder/kits/kit_2.webp"
           },
           {
             "name": "Novelties",
             "price": {
-              "AUD": 40,
-              "EUR": 31,
-              "USD": 100
+              "USD": 49,
+              "CAD": 62,
+              "EUR": 54,
+              "GBP": 38.33,
+              "CNY": 339,
+              "PHP": 2750,
+              "CLP": 53990,
+              "AUD": 71
             },
-            "imageSrc": "/assets/gmk_carbon_r1/kits/kits_2.webp"
+            "imageSrc": "/assets/gmk_cinder/kits/kit_3.webp"
           },
           {
             "name": "Spacebars",
             "price": {
-              "AUD": 40,
-              "EUR": 31,
-              "USD": 100
+              "USD": 29,
+              "CAD": 38,
+              "EUR": 29,
+              "GBP": 22.5,
+              "CNY": 199,
+              "PHP": 1600,
+              "CLP": 28900,
+              "AUD": 42
             },
-            "imageSrc": "/assets/gmk_carbon_r1/kits/kits_2.webp"
+            "imageSrc": "/assets/gmk_cinder/kits/kit_4.webp"
           }
         ],
         "renders": [
           {
-            "name": "Render 1",
-            "imageSrc": "/assets/gmk_carbon_r1/renders/render_1.webp"
+            "name": "Fuji 65",
+            "imageSrc": "/assets/gmk_cinder/renders/render_1.webp"
           },
           {
-            "name": "Render 2",
-            "imageSrc": "/assets/gmk_carbon_r1/renders/render_1.webp"
+            "name": "M60-A",
+            "imageSrc": "/assets/gmk_cinder/renders/render_2.webp"
           },
           {
-            "name": "Render 3",
-            "imageSrc": "/assets/gmk_carbon_r1/renders/render_1.webp"
+            "name": "Fjell",
+            "imageSrc": "/assets/gmk_cinder/renders/render_3.webp"
           },
           {
-            "name": "Render 4",
-            "imageSrc": "/assets/gmk_carbon_r1/renders/render_1.webp"
+            "name": "U80-A",
+            "imageSrc": "/assets/gmk_cinder/renders/render_4.webp"
           },
           {
-            "name": "Render 5",
-            "imageSrc": "/assets/gmk_carbon_r1/renders/render_1.webp"
+            "name": "Ikki68 Aurora",
+            "imageSrc": "/assets/gmk_cinder/renders/render_5.webp"
+          },
+          {
+            "name": "M65-A",
+            "imageSrc": "/assets/gmk_cinder/renders/render_6.webp"
           }
         ],
         "manufacturer": "GMK",

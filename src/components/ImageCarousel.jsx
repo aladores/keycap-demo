@@ -1,4 +1,4 @@
-import { useEffect } from "preact/hooks";
+import { useEffect, useState } from "preact/hooks";
 import { useStore } from "@nanostores/preact";
 import {
   index,
@@ -9,6 +9,7 @@ import {
 import "../styles/ImageCarousel.css";
 
 export default function ImageCarousel({ kits, id }) {
+  const [isImageLoading, setIsImageLoading] = useState(true);
   const $index = useStore(index);
 
   function handleKitClick(index) {
@@ -55,15 +56,24 @@ export default function ImageCarousel({ kits, id }) {
   };
 
   return (
-    <section className="carousel-container">
+    <section className="carousel-container ">
       <div
         className="carousel-slide-container"
         style={`view-transition-name: record-${id};`}
       >
+        <div
+          className="skeleton-placeholder skeleton"
+          style={{ display: isImageLoading ? "block" : "none" }}
+        ></div>
         <div className="carousel-slide">
           {kits.map((item, index) => {
             return (
-              <img src={item.imageSrc} className="carousel-image" key={index} />
+              <img
+                src={item.imageSrc}
+                className="carousel-image skeleton"
+                onLoad={setIsImageLoading(false)}
+                key={index}
+              />
             );
           })}
         </div>
@@ -75,7 +85,9 @@ export default function ImageCarousel({ kits, id }) {
           return (
             <img
               src={item.imageSrc}
-              className={`mini-thumbnail ${index === $index ? " active" : ""}`}
+              className={`mini-thumbnail skeleton ${
+                index === $index ? " active" : ""
+              }`}
               key={index}
               onClick={() => {
                 handleKitClick(index);

@@ -188,6 +188,20 @@ a {
     padding-bottom: 1rem;
 }
 
+.skeleton {
+    animation: skeleton-loading 1s linear infinite alternate;
+}
+
+@keyframes skeleton-loading {
+    0% {
+        background-color: rgb(167, 167, 167);
+    }
+
+    100% {
+        background-color: rgb(43, 42, 42);
+    }
+}
+
 @media (min-width: 640px) {}
 
 @media (min-width: 768px) {

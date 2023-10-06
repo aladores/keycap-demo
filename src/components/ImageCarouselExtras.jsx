@@ -59,7 +59,8 @@ export default function ImageCarouselExtras({ extras, element }) {
               return (
                 <img
                   src={item.imageSrc}
-                  className="carousel-image extras-image"
+                  className="carousel-image extras-image skeleton"
+                  loading="lazy"
                   key={index}
                 />
               );

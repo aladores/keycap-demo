@@ -10,6 +10,7 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astro-aws/adapter": "^0.4.0",
     "@astrojs/preact": "^3.0.0",
     "@nanostores/preact": "^0.5.0",
     "@types/react": "^18.2.21",

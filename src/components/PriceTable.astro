@@ -9,38 +9,77 @@ const currencies = kits.reduce((allCurrencies, kit) => {
   });
   return allCurrencies;
 }, []);
+
+function currencyWithSymbol(currency) {
+  let currencyWithSymbol = currency;
+  switch (currency) {
+    case "USD":
+      currencyWithSymbol = "$" + currency;
+      break;
+    case "CAD":
+      currencyWithSymbol = "$" + currency;
+      break;
+    case "EUR":
+      currencyWithSymbol = "€" + currency;
+      break;
+    case "GBP":
+      currencyWithSymbol = "£" + currency;
+      break;
+    case "CNY":
+      currencyWithSymbol = "¥" + currency;
+      break;
+    case "PHP":
+      currencyWithSymbol = "₱" + currency;
+      break;
+    case "CLP":
+      currencyWithSymbol = "$" + currency;
+      break;
+    case "AUD":
+      currencyWithSymbol = "$" + currency;
+      break;
+  }
+
+  return currencyWithSymbol;
+}
 ---
 
-<table class="text-base">
-  <thead>
-    <tr>
-      <th>Name</th>
+<div class="table-wrapper">
+  <table class="text-base">
+    <thead>
+      <tr>
+        <th>Name</th>
+        {
+          currencies.map((currency) => {
+            return (
+              <th class="text-align-right">{currencyWithSymbol(currency)}</th>
+            );
+          })
+        }
+      </tr>
+    </thead>
+    <tbody>
       {
-        currencies.map((currency) => {
-          return <th class="text-align-right">{currency}</th>;
+        kits.map((kit) => {
+          return (
+            <tr>
+              <td>{kit.name}</td>
+              {currencies.map((currency) => {
+                return <td class="table-data">{kit.price[currency]}</td>;
+              })}
+            </tr>
+          );
         })
       }
-    </tr>
-  </thead>
-  <tbody>
-    {
-      kits.map((kit) => {
-        return (
-          <tr>
-            <td class="word-break">{kit.name}</td>
-            {currencies.map((currency) => {
-              return <td class="text-align-right">{kit.price[currency]}</td>;
-            })}
-          </tr>
-        );
-      })
-    }
-  </tbody>
-</table>
+    </tbody>
+  </table>
+</div>
 <style>
+  .table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+  }
   table {
     border-collapse: collapse;
-    width: 100%;
   }
   td,
   th {
@@ -52,7 +91,8 @@ const currencies = kits.reduce((allCurrencies, kit) => {
   tr:nth-child(even) {
     background-color: #eaeaea;
   }
-  .text-align-right {
+  .table-data {
+    padding-left: 1rem;
     text-align: right;
   }
 </style>

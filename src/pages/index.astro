@@ -1,36 +1,38 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
-import data from "../../public/data.json";
+import { getCollection } from "astro:content";
 
-const featuredData = data.keycaps.filter((item) => {
-  return item.featured === true;
+const gmkKeycaps = await getCollection("gmk");
+
+const featuredData = gmkKeycaps.filter((item) => {
+  return item.data.featured === true;
 });
 
-const bannerData = data.keycaps.filter((item) => {
-  return item.banner === true;
+const bannerData = gmkKeycaps.filter((item) => {
+  return item.data.banner === true;
 });
 
-const latestData = data.keycaps.filter((item, index) => {
-  return index >= 3;
-});
+// const latestData = gmkKeycaps.filter((item, index) => {
+//   return index >= 3;
+// });
 ---
 
 <Layout title="Keycap">
   <main class="main-container">
     <section class="banner-container">
       <img
-        src={bannerData[0].attributes.renders[0].imageSrc}
+        src={bannerData[0].data.renders[0].imageSrc}
         class="banner-image skeleton"
       />
       <div class="banner-info-wrapper">
         <div class="banner-info-container">
           <p class="text-small banner-label">
-            {bannerData[0].attributes.designer.toUpperCase()}
+            {bannerData[0].data.designer.toUpperCase()}
           </p>
-          <h3 class="text-xl">{bannerData[0].attributes.title}</h3>
+          <h3 class="text-xl">{bannerData[0].data.title}</h3>
           <p class="text-small banner-description">
-            {bannerData[0].attributes.description}
+            {bannerData[0].data.description}
           </p>
         </div>
 
@@ -47,18 +49,18 @@ const latestData = data.keycaps.filter((item, index) => {
             return (
               <Card
                 id={item.id}
-                manufacturer={item.attributes.manufacturer}
-                title={item.attributes.title}
-                imageSrc={item.attributes.kits[0].imageSrc}
-                accentColor={item.attributes.colors[1].color.hex}
-                designer={item.attributes.designer}
+                manufacturer={item.data.manufacturer}
+                title={item.data.title}
+                imageSrc={item.data.kits[0].imageSrc}
+                accentColor={item.data.colors[1].color.hex}
+                designer={item.data.designer}
               />
             );
           })
         }
       </ul>
     </section>
-    <section>
+    <!-- <section>
       <h2 class="text-2xl header-main-subtitle">Latest</h2>
       <ul role="list" class="card-grid">
         {
@@ -66,17 +68,17 @@ const latestData = data.keycaps.filter((item, index) => {
             return (
               <Card
                 id={item.id}
-                manufacturer={item.attributes.manufacturer}
-                title={item.attributes.title}
-                imageSrc={item.attributes.kits[0].imageSrc}
-                accentColor={item.attributes.colors[1].color.hex}
-                designer={item.attributes.designer}
+                manufacturer={item.data.manufacturer}
+                title={item.data.title}
+                imageSrc={item.data.kits[0].imageSrc}
+                accentColor={item.data.colors[1].color.hex}
+                designer={item.data.designer}
               />
             );
           })
         }
       </ul>
-    </section>
+    </section> -->
   </main>
 </Layout>
 

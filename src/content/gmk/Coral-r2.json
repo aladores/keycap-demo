@@ -1,0 +1,126 @@
+{
+    "collabs": [
+      {
+        "imageSrc": "/assets/gmk_coral_r2/collabs/collab_1.webp",
+        "name": "Hibi"
+      }
+    ],
+    "colors": [
+      {
+        "color": {
+          "code": "GMK CP",
+          "hex": "#e1dbd1"
+        },
+        "name": "Base"
+      },
+      {
+        "color": {
+          "code": "PATONE 16-1546 TCX",
+          "hex": "#ff6f61"
+        },
+        "name": "Modifiers"
+      },
+      {
+        "color": {
+          "code": "PATONE 13-4810 TCX",
+          "hex": "#98dddf"
+        },
+        "name": "Accent"
+      }
+    ],
+    "dates": {
+      "groupBuy": "June 2022",
+      "shipped": "September 2023"
+    },
+    "description": "I don't know about you, but I find coral reefs to be absolutely beautiful and stunning; however, coral reefs face a very serious threat from us, humans. From destructive fishing to climate change, these external factors threaten approximately 75% of the world's coral reefs.",
+    "designer": "HoodrowThrillson",
+    "deskmats": [
+      {
+        "imageSrc": "/assets/gmk_coral_r2/deskmats/deskmat_1.webp",
+        "name": "Deskmat 1"
+      }
+    ],
+    "groupBuyLink": "https://geekhack.org/index.php?topic=115782.0",
+    "keyArt": [
+      {
+        "name:": "banner",
+        "imageSrc": "/assets/gmk_coral_r2/keyArt/keyArt_1.webp"
+      }
+    ],
+    "kits": [
+      {
+        "name": "Base",
+        "price": {
+          "USD": "130.00",
+          "CAD": "175.00",
+          "EUR": "145.00",
+          "GBP": "128.00",
+          "CNY": "969.00",
+          "AUD": "187.00"
+        },
+        "imageSrc": "/assets/gmk_coral_r2/kits/kit_1.webp"
+      },
+      {
+        "name": "Coral Relief",
+        "price": {
+          "USD": "125.00",
+          "CAD": "165.00",
+          "EUR": "140.00",
+          "GBP": "123.00",
+          "CNY": "939.00",
+          "AUD": "180.00"
+        },
+        "imageSrc": "/assets/gmk_coral_r2/kits/kit_2.webp"
+      },
+      {
+        "name": "Novelties",
+        "price": {
+          "USD": "35.00",
+          "CAD": "48.00",
+          "EUR": "39.00",
+          "GBP": "34.00",
+          "CNY": "249.00",
+          "AUD": "50.00"
+        },
+        "imageSrc": "/assets/gmk_coral_r2/kits/kit_3.webp"
+      },
+      {
+        "name": "Spacebar",
+        "price": {
+          "USD": "25.00",
+          "CAD": "38.00",
+          "EUR": "28.00",
+          "GBP": "25.00",
+          "CNY": "179.00",
+          "AUD": "36.00"
+        },
+        "imageSrc": "/assets/gmk_coral_r2/kits/kit_4.webp"
+      }
+    ],
+    "renders": [
+      {
+        "name": "Mimi",
+        "imageSrc": "/assets/gmk_coral_r2/renders/render_1.webp"
+      },
+      {
+        "name": "Matrix 2.0",
+        "imageSrc": "/assets/gmk_coral_r2/renders/render_2.webp"
+      },
+      {
+        "name": "Matrix Vita",
+        "imageSrc": "/assets/gmk_coral_r2/renders/render_3.webp"
+      },
+      {
+        "name": "RS",
+        "imageSrc": "/assets/gmk_coral_r2/renders/render_4.webp"
+      },
+      {
+        "name": "Matrix 1.2og",
+        "imageSrc": "/assets/gmk_coral_r2/renders/render_5.webp"
+      }
+    ],
+    "manufacturer": "GMK",
+    "title": "Coral r2",
+    "banner": false,
+    "featured": false
+  }

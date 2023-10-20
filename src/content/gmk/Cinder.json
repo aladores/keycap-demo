@@ -1,0 +1,153 @@
+{
+    "collabs": [
+      {
+        "imageSrc": "/assets/gmk_cinder/collabs/collab_1.webp",
+        "name": "THOK"
+      },
+      {
+        "imageSrc": "/assets/gmk_cinder/collabs/collab_2.webp",
+        "name": "HIBI"
+      },
+      {
+        "imageSrc": "/assets/gmk_cinder/collabs/collab_3.webp",
+        "name": "Asero Foundry"
+      }
+    ],
+    "colors": [
+      {
+        "color": {
+          "code": "Pantone 445 C",
+          "hex": "#505759"
+        },
+        "name": "Base"
+      },
+      {
+        "color": {
+          "code": "Pantone 1505 C",
+          "hex": "#ff6900"
+        },
+        "name": "Legends"
+      },
+      {
+        "color": {
+          "code": "Pantone 426 C",
+          "hex": "#f7f2ea"
+        },
+        "name": "Modifiers"
+      }
+    ],
+    "dates": {
+      "groupBuy": "April 2022",
+      "shipped": "September 2023"
+    },
+    "description": "Inspired by charred wood, fire and volcanic rock, the concept for this set is orange alphas that stand out like embers against the grey base color and dark grey modifier legends.",
+    "designer": "JPoc",
+    "deskmats": [
+      {
+        "imageSrc": "/assets/gmk_cinder/deskmats/deskmat_1.webp",
+        "name": "Eclipse"
+      },
+      {
+        "imageSrc": "/assets/gmk_cinder/deskmats/deskmat_2.webp",
+        "name": "Forge"
+      },
+      {
+        "imageSrc": "/assets/gmk_cinder/deskmats/deskmat_3.webp",
+        "name": "Coal"
+      },
+      {
+        "imageSrc": "/assets/gmk_cinder/deskmats/deskmat_4.webp",
+        "name": "Ash"
+      }
+    ],
+    "groupBuyLink": "https://geekhack.org/index.php?topic=116822.0",
+    "keyArt": [],
+    "kits": [
+      {
+        "name": "Hiragana Base",
+        "price": {
+          "USD": "135.00",
+          "CAD": "170.00",
+          "EUR": "148.00",
+          "GBP": "105.83",
+          "CNY": "969.00",
+          "PHP": "7,850.00",
+          "CLP": "138,990.00",
+          "AUD": "196.00"
+        },
+        "imageSrc": "/assets/gmk_cinder/kits/kit_1.webp"
+      },
+      {
+        "name": "Latin Base",
+        "price": {
+          "USD": "135.00",
+          "CAD": "170.00",
+          "EUR": "148.00",
+          "GBP": "105.83",
+          "CNY": "969.00",
+          "PHP": "7,850.00",
+          "CLP": "138,990.00",
+          "AUD": "196.00"
+        },
+        "imageSrc": "/assets/gmk_cinder/kits/kit_2.webp"
+      },
+      {
+        "name": "Novelties",
+        "price": {
+          "USD": "135.00",
+          "CAD": "170.00",
+          "EUR": "148.00",
+          "GBP": "105.83",
+          "CNY": "969.00",
+          "PHP": "7,850.00",
+          "CLP": "138,990.00",
+          "AUD": "196.00"
+        },
+        "imageSrc": "/assets/gmk_cinder/kits/kit_3.webp"
+      },
+      {
+        "name": "Spacebars",
+        "price": {
+          "USD": "29.00",
+          "CAD": "38.00",
+          "EUR": "29.00",
+          "GBP": "22.50",
+          "CNY": "199.00",
+          "PHP": "1,600.00",
+          "CLP": "28,900.00",
+          "AUD": "42.00"
+        },
+        "imageSrc": "/assets/gmk_cinder/kits/kit_4.webp"
+      }
+    ],
+    "renders": [
+      {
+        "name": "Fuji 65",
+        "imageSrc": "/assets/gmk_cinder/renders/render_1.webp"
+      },
+      {
+        "name": "M60-A",
+        "imageSrc": "/assets/gmk_cinder/renders/render_2.webp"
+      },
+      {
+        "name": "Fjell",
+        "imageSrc": "/assets/gmk_cinder/renders/render_3.webp"
+      },
+      {
+        "name": "U80-A",
+        "imageSrc": "/assets/gmk_cinder/renders/render_4.webp"
+      },
+      {
+        "name": "Ikki68 Aurora",
+        "imageSrc": "/assets/gmk_cinder/renders/render_5.webp"
+      },
+      {
+        "name": "M65-A",
+        "imageSrc": "/assets/gmk_cinder/renders/render_6.webp"
+      }
+    ],
+    "manufacturer": "GMK",
+    "title": "Cinder",
+    "banner": false,
+    "featured": false
+  }

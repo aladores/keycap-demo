@@ -1,0 +1,92 @@
+{
+    "collabs": [
+      {
+        "imageSrc": "/assets/gmk_peach_blossom_r2/collabs/collab_1.webp",
+        "name": "HIBI X PEACH BLOSSOM R2"
+      },
+      {
+        "imageSrc": "/assets/gmk_peach_blossom_r2/collabs/collab_2.webp",
+        "name": "Asero Foundry X PEACH BLOSSOM R2"
+      }
+    ],
+    "colors": [
+      {
+        "color": {
+          "code": "Pantone 1767C",
+          "hex": "#fcafc0"
+        },
+        "name": "Base"
+      },
+      {
+        "color": {
+          "code": "WS1",
+          "hex": "#f7f2ea"
+        },
+        "name": "Legends"
+      }
+    ],
+    "dates": {
+      "groupBuy": "June 2022",
+      "shipped": "September 2023"
+    },
+    "description": "Thank you to everyone who messaged and commented over the past year expressing interest in another round of this keyset.R2 is back with the same pink color but updated kits. If you're interested, please fill out the IC form to let me know what you think:",
+    "designer": "Kema",
+    "deskmats": [],
+    "groupBuyLink": "https://geekhack.org/index.php?topic=117058.0",
+    "keyArt": [],
+    "kits": [
+      {
+        "name": "Base",
+        "price": {
+          "USD": "129.00",
+          "EUR": "145.00",
+          "AUD": "195.00"
+        },
+        "imageSrc": "/assets/gmk_peach_blossom_r2/kits/kit_1.webp"
+      },
+      {
+        "name": "Hangul",
+        "price": {
+          "USD": "42.00",
+          "EUR": "43.00",
+          "AUD": "60.00"
+        },
+        "imageSrc": "/assets/gmk_peach_blossom_r2/kits/kit_2.webp"
+      },
+      {
+        "name": "Spacebars",
+        "price": {
+          "USD": "28.00",
+          "EUR": "31.00",
+          "AUD": "40.00"
+        },
+        "imageSrc": "/assets/gmk_peach_blossom_r2/kits/kit_2.webp"
+      }
+    ],
+    "renders": [
+      {
+        "name": "Render 1",
+        "imageSrc": "/assets/gmk_peach_blossom_r2/renders/render_1.webp"
+      },
+      {
+        "name": "Render 2",
+        "imageSrc": "/assets/gmk_peach_blossom_r2/renders/render_1.webp"
+      },
+      {
+        "name": "Render 3",
+        "imageSrc": "/assets/gmk_peach_blossom_r2/renders/render_1.webp"
+      },
+      {
+        "name": "Render 4",
+        "imageSrc": "/assets/gmk_peach_blossom_r2/renders/render_1.webp"
+      },
+      {
+        "name": "Render 5",
+        "imageSrc": "/assets/gmk_peach_blossom_r2/renders/render_1.webp"
+      }
+    ],
+    "manufacturer": "GMK",
+    "title": "Peach Blossom r2",
+    "banner": false,
+    "featured": false
+  }

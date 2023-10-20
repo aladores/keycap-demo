@@ -1,0 +1,101 @@
+{
+  "collabs": [
+    {
+      "imageSrc": "/assets/gmk_noire/collabs/collab_1.webp",
+      "name": "Salvun x Aluminum"
+    },
+    {
+      "imageSrc": "/assets/gmk_noire/collabs/collab_2.webp",
+      "name": "Salvun x Copper"
+    },
+    {
+      "imageSrc": "/assets/gmk_noire/collabs/collab_3.webp",
+      "name": "Salvun x Brass"
+    }
+  ],
+  "colors": [
+    {
+      "color": {
+        "code": "GMK CR",
+        "hex": "#171718"
+      },
+      "name": "Base"
+    },
+    {
+      "color": {
+        "code": "RAL 1013",
+        "hex": "#EAE6CA"
+      },
+      "name": "Legends"
+    }
+  ],
+  "dates": {
+    "groupBuy": "October 2020",
+    "shipped": "May 2022"
+  },
+  "description": "Inspired by a need for a set that would work well on as many boards as possible, regardless of design, layout, budget or color; and inspired by midcentury modern and minimalist design",
+  "designer": "apiary",
+  "deskmats": [
+    {
+      "imageSrc": "/assets/gmk_noire/deskmats/deskmat_3.webp",
+      "name": "Disintegration"
+    },
+    {
+      "imageSrc": "/assets/gmk_noire/deskmats/deskmat_2.webp",
+      "name": "Diffraction"
+    },
+    {
+      "imageSrc": "/assets/gmk_noire/deskmats/deskmat_3.webp",
+      "name": "Division"
+    }
+  ],
+  "groupBuyLink": "https://geekhack.org/index.php?topic=108890.0",
+  "keyArt": [
+    {
+      "imageSrc": "/assets/gmk_noire/keyArt/keyArt_1.webp",
+      "name": "keyArt_1"
+    },
+    {
+      "imageSrc": "/assets/gmk_noire/keyArt/keyArt_2.webp",
+      "name": "keyArt_2"
+    }
+  ],
+  "kits": [
+    {
+      "imageSrc": "/assets/gmk_noire/kits/kit_1.webp",
+      "name": "Base",
+      "price": {
+        "USD": "140.00",
+        "EUR": "129.00",
+        "CAD": "190.00"
+      }
+    },
+    {
+      "imageSrc": "/assets/gmk_noire/kits/kit_2.webp",
+      "name": "Novelties",
+      "price": {
+        "USD": "45.00",
+        "EUR": "39.00",
+        "CAD": "62.00"
+      }
+    }
+  ],
+  "renders": [
+    {
+      "imageSrc": "/assets/gmk_noire/renders/render_1.webp",
+      "name": "Keycult No 2"
+    },
+    {
+      "imageSrc": "/assets/gmk_noire/renders/render_2.webp",
+      "name": "Zambumon Sar"
+    },
+    {
+      "imageSrc": "/assets/gmk_noire/renders/render_3.webp",
+      "name": "Zambumon Jules"
+    }
+  ],
+  "manufacturer": "GMK",
+  "title": "Noire",
+  "banner": true,
+  "featured": true
+}

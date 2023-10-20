@@ -5,63 +5,66 @@ import ImageCarouselExtras from "../../components/ImageCarouselExtras.jsx";
 import KeycapButtons from "../../components/KeycapButtons.jsx";
 import PriceTable from "../../components/PriceTable.astro";
 import ColorBlock from "../../components/ColorBlock.astro";
+import { getCollection } from "astro:content";
 
-import data from "../../../public/data.json";
+export async function getStaticPaths() {
+  const keycaps = await getCollection("gmk");
+  return keycaps.map((item) => {
+    return {
+      params: { id: item.id },
+      props: { item },
+    };
+  });
+}
 
-const { id } = Astro.params;
-const response = data.keycaps.filter((item) => {
-  return id === item.id;
-});
+const { item } = Astro.props;
+// const { Content } = await item.render();
 ---
 
 <Layout title="Keycap demo">
   <main class="keycap-info-wrapper">
     <section class="keycap-info-container">
       <div class="keycap-carousel-container">
-        <ImageCarousel client:load kits={response[0].attributes.kits} id={id} />
+        <ImageCarousel client:load kits={item.data.kits} id={item.id} />
       </div>
       <div class="keycap-main-info-container">
         <div>
           <h2 class="text-3xl">
-            {
-              response[0].attributes.manufacturer +
-                " " +
-                response[0].attributes.title
-            }
+            {item.data.manufacturer + " " + item.data.title}
           </h2>
           <div class="keycap-tags-container">
             <div>
               <p class="text-small text-bold">Designed by</p>
-              <p class="text-small">{response[0].attributes.designer}</p>
+              <p class="text-small">{item.data.designer}</p>
             </div>
             <div>
               <p class="text-small text-bold">Group buy</p>
               <p class="text-small">
-                {response[0].attributes.dates.groupBuy}
+                {item.data.dates.groupBuy}
               </p>
             </div>
             <div>
               <p class="text-small text-bold">Shipped</p>
-              <p class="text-small">{response[0].attributes.dates.shipped}</p>
+              <p class="text-small">{item.data.dates.shipped}</p>
             </div>
           </div>
         </div>
-        <p class="text-base">{response[0].attributes.description}</p>
+        <p class="text-base">{item.data.description}</p>
         <div>
           <h3 class="text-xl">Kits</h3>
-          <KeycapButtons client:load kits={response[0].attributes.kits} />
+          <KeycapButtons client:load kits={item.data.kits} />
         </div>
 
         <div>
           <h3 class="text-xl">Colors</h3>
-          <ColorBlock colors={response[0].attributes.colors} />
+          <ColorBlock colors={item.data.colors} />
         </div>
 
         <div>
           <h3 class="text-xl">Pricing</h3>
           {
-            Object.keys(response[0].attributes.kits[0].price).length !== 0 ? (
-              <PriceTable kits={response[0].attributes.kits} />
+            Object.keys(item.data.kits[0].price).length !== 0 ? (
+              <PriceTable kits={item.data.kits} />
             ) : (
               <p class="text-base">No pricing available.</p>
             )
@@ -71,36 +74,36 @@ const response = data.keycaps.filter((item) => {
     </section>
     <section class="keycap-extras-container">
       {
-        response[0].attributes.deskmats.length !== 0 && (
+        item.data.deskmats.length !== 0 && (
           <div>
             <h3 class="text-xl">Deskmats</h3>
             <ImageCarouselExtras
               client:load
-              extras={response[0].attributes.deskmats}
+              extras={item.data.deskmats}
               element="deskmats"
             />
           </div>
         )
       }
       {
-        response[0].attributes.renders.length !== 0 && (
+        item.data.renders.length !== 0 && (
           <div>
             <h3 class="text-xl">Renders</h3>
             <ImageCarouselExtras
               client:load
-              extras={response[0].attributes.renders}
+              extras={item.data.renders}
               element="renders"
             />
           </div>
         )
       }
       {
-        response[0].attributes.collabs.length !== 0 && (
+        item.data.collabs.length !== 0 && (
           <div>
             <h3 class="text-xl">Collabs</h3>
             <ImageCarouselExtras
               client:load
-              extras={response[0].attributes.collabs}
+              extras={item.data.collabs}
               element="collabs"
             />
           </div>
@@ -109,9 +112,7 @@ const response = data.keycaps.filter((item) => {
     </section>
     <section class="reference-container">
       <p>Reference:</p>
-      <a href={response[0].attributes.groupBuyLink} class="reference-link"
-        >Link</a
-      >
+      <a href={item.data.groupBuyLink} class="reference-link">Link</a>
     </section>
   </main>
 </Layout>

@@ -1,0 +1,127 @@
+{
+    "collabs": [
+      {
+        "name": "RAMA M6-C",
+        "imageSrc": "/assets/gmk_metropolis_r2/collabs/collab_1.webp"
+      },
+      {
+        "name": "RAMA Enter",
+        "imageSrc": "/assets/gmk_metropolis_r2/collabs/collab_2.webp"
+      },
+      {
+        "name": "RAMA Novelty",
+        "imageSrc": "/assets/gmk_metropolis_r2/collabs/collab_3.webp"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Base",
+        "color": {
+          "code": "Pantone 5395c",
+          "hex": "#091f2c"
+        }
+      },
+      {
+        "name": "Legends",
+        "color": {
+          "code": "Pantone 333c",
+          "hex": "#3cdbc0"
+        }
+      },
+      {
+        "name": "Modifiers",
+        "color": {
+          "code": "Pantone 142c",
+          "hex": "#f1be48"
+        }
+      },
+      {
+        "name": "Modifiers",
+        "color": {
+          "code": "Pantone 179c",
+          "hex": "#e03c31"
+        }
+      }
+    ],
+    "dates": {
+      "groupBuy": "April 2021",
+      "shipped": "January 2023"
+    },
+    "description": "Return to Metropolis with the highly anticipated second run of this iconic keyset. Featuring additional icon novelties, re-imagined kits, extended coverage, and some excellent collaborations from our friends at RAMA WORKS.",
+    "designer": "Nephlock",
+    "deskmats": [
+      {
+        "name": "Standard",
+        "imageSrc": "/assets/gmk_metropolis_r2/deskmats/deskmat_1.webp"
+      },
+      {
+        "name": "Midnight",
+        "imageSrc": "/assets/gmk_metropolis_r2/deskmats/deskmat_2.webp"
+      }
+    ],
+    "groupBuyLink": "https://geekhack.org/index.php?topic=108890.0",
+    "keyArt": [
+      {
+        "imageSrc": "/assets/gmk_noire/keyArt/keyArt_1.webp",
+        "name": "keyArt_1"
+      },
+      {
+        "imageSrc": "/assets/gmk_noire/keyArt/keyArt_2.webp",
+        "name": "keyArt_2"
+      }
+    ],
+    "kits": [
+      {
+        "name": "Base",
+        "price": {},
+        "imageSrc": "/assets/gmk_metropolis_r2/kits/kit_1.webp"
+      },
+      {
+        "name": "Blocks",
+        "price": {},
+        "imageSrc": "/assets/gmk_metropolis_r2/kits/kit_2.webp"
+      },
+      {
+        "name": "Signs",
+        "price": {},
+        "imageSrc": "/assets/gmk_metropolis_r2/kits/kit_3.webp"
+      },
+      {
+        "name": "Compact",
+        "price": {},
+        "imageSrc": "/assets/gmk_metropolis_r2/kits/kit_4.webp"
+      },
+      {
+        "name": "Turnpike",
+        "price": {},
+        "imageSrc": "/assets/gmk_metropolis_r2/kits/kit_5.webp"
+      },
+      {
+        "name": "Midnight",
+        "price": {},
+        "imageSrc": "/assets/gmk_metropolis_r2/kits/kit_6.webp"
+      }
+    ],
+    "renders": [
+      {
+        "name": "Render 1",
+        "imageSrc": "/assets/gmk_metropolis_r2/renders/render_1.webp"
+      },
+      {
+        "name": "Render 2",
+        "imageSrc": "/assets/gmk_metropolis_r2/renders/render_2.webp"
+      },
+      {
+        "name": "Render 2",
+        "imageSrc": "/assets/gmk_metropolis_r2/renders/render_3.webp"
+      },
+      {
+        "name": "Render 3",
+        "imageSrc": "/assets/gmk_metropolis_r2/renders/render_4.webp"
+      }
+    ],
+    "manufacturer": "GMK",
+    "title": "Metropolis r2",
+    "banner": false,
+    "featured": true
+  }

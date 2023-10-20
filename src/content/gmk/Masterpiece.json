@@ -1,0 +1,135 @@
+{
+  "collabs": [
+    {
+      "name": "RAMA Knife Gold PVD Brass",
+      "imageSrc": "/assets/gmk_masterpiece/collabs/collab_1.webp"
+    },
+    {
+      "name": "RAMA Knife Black PVD Brass",
+      "imageSrc": "/assets/gmk_masterpiece/collabs/collab_2.webp"
+    },
+    {
+      "name": "RAMA Master Gold PVD Brass",
+      "imageSrc": "/assets/gmk_masterpiece/collabs/collab_3.webp"
+    }
+  ],
+  "colors": [
+    {
+      "color": {
+        "code": "Custom Blue (RAL)",
+        "hex": "#006A93"
+      },
+      "name": "Base"
+    },
+    {
+      "color": {
+        "code": "GMK WS1",
+        "hex": "#f7f2ea"
+      },
+      "name": "Legends"
+    }
+  ],
+  "dates": {
+    "groupBuy": "May 2019",
+    "shipped": "April 2022"
+  },
+  "description": "The inspiration for this set comes from the Japanese high quality craftsmanship. Japanese craftsmanship is handmade and created by people using skills passed down for generations to ensure only the best quality product - a true masterpiece. With that spirit in mind I designed a keycap set, capturing the unique aesthetics of the Japanese culture. The Katakana legends will give the set a very unique look, paired with a beautiful rich blue.",
+  "designer": "Energieschleuder",
+  "deskmats": [
+    {
+      "imageSrc": "/assets/gmk_masterpiece/deskmats/deskmat_1.webp",
+      "name": "Wave"
+    },
+    {
+      "imageSrc": "/assets/gmk_masterpiece/deskmats/deskmat_2.webp",
+      "name": "Endgame"
+    },
+    {
+      "imageSrc": "/assets/gmk_masterpiece/deskmats/deskmat_3.webp",
+      "name": "Square"
+    }
+  ],
+  "groupBuyLink": "https://geekhack.org/index.php?topic=108890.0",
+  "keyArt": [
+    {
+      "imageSrc": "/assets/gmk_masterpiece/keyArt/keyArt_1.webp",
+      "name": "keyArt_1"
+    },
+    {
+      "imageSrc": "/assets/gmk_masterpiece/keyArt/keyArt_2.webp",
+      "name": "keyArt_2"
+    }
+  ],
+  "kits": [
+    {
+      "imageSrc": "/assets/gmk_masterpiece/kits/kit_1.webp",
+      "name": "Base",
+      "price": {
+        "USD": "129.00",
+        "EUR": "139.00",
+        "AUD": "230.00",
+        "SGD": "198.00",
+        "CAD": "190.00"
+      }
+    },
+    {
+      "imageSrc": "/assets/gmk_masterpiece/kits/kit_2.webp",
+      "name": "Clarity",
+      "price": {
+        "USD": "49.00",
+        "EUR": "56.00",
+        "AUD": "95.00",
+        "SGD": "75.00",
+        "CAD": "73.00"
+      }
+    },
+    {
+      "imageSrc": "/assets/gmk_masterpiece/kits/kit_3.webp",
+      "name": "Preserving",
+      "price": {
+        "USD": "35.00",
+        "EUR": "38.00",
+        "AUD": "60.00",
+        "SGD": "54.00",
+        "CAD": "52.00"
+      }
+    },
+    {
+      "imageSrc": "/assets/gmk_masterpiece/kits/kit_4.webp",
+      "name": "West",
+      "price": {
+        "USD": "59.00",
+        "EUR": "66.00",
+        "AUD": "100.00",
+        "SGD": "91.00",
+        "CAD": "88.00"
+      }
+    }
+  ],
+  "renders": [
+    {
+      "name": "J80",
+      "imageSrc": "/assets/gmk_masterpiece/renders/render_1.webp"
+    },
+    {
+      "name": "KBDfans KBD19x",
+      "imageSrc": "/assets/gmk_masterpiece/renders/render_2.webp"
+    },
+    {
+      "name": "RAMA Koyu",
+      "imageSrc": "/assets/gmk_masterpiece/renders/render_3.webp"
+    },
+    {
+      "name": "KBDfans Tofu",
+      "imageSrc": "/assets/gmk_masterpiece/renders/render_4.webp"
+    },
+    {
+      "name": "HEX.3C",
+      "imageSrc": "/assets/gmk_masterpiece/renders/render_5.webp"
+    }
+  ],
+  "manufacturer": "GMK",
+  "title": "Masterpiece",
+  "banner": false,
+  "featured": true
+}

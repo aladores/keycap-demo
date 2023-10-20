@@ -1,15 +1,15 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
-import data from "../../public/data.json";
+import { getCollection } from "astro:content";
+const gmkKeycaps = await getCollection("gmk");
 
-const sortedData = [...data.keycaps].sort((a, b) =>
-  a.attributes.title > b.attributes.title ? 1 : -1
+const sortedData = [...gmkKeycaps].sort((a, b) =>
+  a.data.title > b.data.title ? 1 : -1
 );
 
 const keyCapHeaderSet = new Set(
   sortedData.map((item) => {
-    return item.attributes.title.charAt(0);
+    return item.data.title.charAt(0);
   })
 );
 ---
@@ -25,13 +25,13 @@ const keyCapHeaderSet = new Set(
               <h3 class="text-2xl text-normal">{item}</h3>
               <ul class="keycap-inner-list text-base">
                 {sortedData.map((keyCap) => {
-                  if (keyCap.attributes.title.charAt(0) === item) {
+                  if (keyCap.data.title.charAt(0) === item) {
                     return (
                       <a href={`/keycap/${keyCap.id}`} class="keycap-list-link">
                         <li class="keycap-list-item">
-                          <p>{keyCap.attributes.title}</p>
+                          <p>{keyCap.data.title}</p>
                           <div class="keycap-color-container">
-                            {keyCap.attributes.colors.map((color, index) => {
+                            {keyCap.data.colors.map((color, index) => {
                               if (index > 2) {
                                 return;
                               }

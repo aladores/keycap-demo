@@ -13,9 +13,9 @@ const bannerData = gmkKeycaps.filter((item) => {
   return item.data.banner === true;
 });
 
-// const latestData = gmkKeycaps.filter((item, index) => {
-//   return index >= 3;
-// });
+const latestData = gmkKeycaps.filter((item) => {
+  console.log(item);
+});
 ---
 
 <Layout title="Keycap">
@@ -36,7 +36,7 @@ const bannerData = gmkKeycaps.filter((item) => {
           </p>
         </div>
 
-        <a class="button-banner-link" href={`/keycap/${101}`}>
+        <a class="button-banner-link" href={`/keycap/${bannerData[0].id}`}>
           <button class="button-banner text-normal">VIEW MORE</button>
         </a>
       </div>

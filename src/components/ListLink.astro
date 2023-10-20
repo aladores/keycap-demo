@@ -1,0 +1,42 @@
+---
+const { keyCap } = Astro.props;
+---
+
+<a href={`/keycap/${keyCap.id}`} class="keycap-list-link">
+  <li class="keycap-list-item">
+    <p>{keyCap.data.title}</p>
+    <div class="keycap-color-container">
+      {
+        keyCap.data.colors.map((color, index) => {
+          if (index > 2) {
+            return;
+          }
+          return (
+            <div
+              class="color-block"
+              style={`background-color:${color.color.hex}`}
+            />
+          );
+        })
+      }
+    </div>
+  </li>
+</a>
+
+<style>
+  .keycap-list-item {
+    display: inline-flex;
+    align-items: center;
+    flex-grow: 0;
+    gap: 1rem;
+  }
+
+  .keycap-color-container {
+    display: flex;
+  }
+
+  .color-block {
+    height: 20px;
+    width: 20px;
+  }
+</style>

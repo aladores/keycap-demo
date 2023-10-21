@@ -18,7 +18,12 @@ export async function getStaticPaths() {
 }
 
 const { item } = Astro.props;
-// const { Content } = await item.render();
+
+function formatToDateWord(isoDate) {
+  const newDate = new Date(isoDate);
+  const options = { year: "numeric", month: "long" };
+  return newDate.toLocaleDateString(undefined, options);
+}
 ---
 
 <Layout title="Keycap demo">
@@ -40,12 +45,14 @@ const { item } = Astro.props;
             <div>
               <p class="text-small text-bold">Group buy</p>
               <p class="text-small">
-                {item.data.dates.groupBuy}
+                {formatToDateWord(item.data.dates.groupBuy)}
               </p>
             </div>
             <div>
               <p class="text-small text-bold">Shipped</p>
-              <p class="text-small">{item.data.dates.shipped}</p>
+              <p class="text-small">
+                {formatToDateWord(item.data.dates.shipped)}
+              </p>
             </div>
           </div>
         </div>

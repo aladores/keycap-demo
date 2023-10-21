@@ -13,9 +13,11 @@ const bannerData = gmkKeycaps.filter((item) => {
   return item.data.banner === true;
 });
 
-const latestData = gmkKeycaps.filter((item) => {
-  console.log(item);
-});
+const latestData = [...gmkKeycaps]
+  .sort((a, b) => {
+    return new Date(b.data.dates.shipped) - new Date(a.data.dates.shipped);
+  })
+  .slice(0, 3);
 ---
 
 <Layout title="Keycap">
@@ -60,7 +62,7 @@ const latestData = gmkKeycaps.filter((item) => {
         }
       </ul>
     </section>
-    <!-- <section>
+    <section>
       <h2 class="text-2xl header-main-subtitle">Latest</h2>
       <ul role="list" class="card-grid">
         {
@@ -78,7 +80,7 @@ const latestData = gmkKeycaps.filter((item) => {
           })
         }
       </ul>
-    </section> -->
+    </section>
   </main>
 </Layout>
 

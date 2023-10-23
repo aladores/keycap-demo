@@ -1,6 +1,6 @@
 import { useState, useEffect } from "preact/hooks";
-import "../styles/ImageCarousel.css";
-import "../styles/KeycapButtons.css";
+import "../../styles/ImageCarousel.css";
+import "../../styles/KeycapButtons.css";
 export default function ImageCarouselExtras({ extras, element }) {
   const [currIndex, setCurrIndex] = useState(0);
 

@@ -5,8 +5,8 @@ import {
   setIndex,
   incrementIndex,
   decrementIndex,
-} from "../stores/indexStore";
-import "../styles/ImageCarousel.css";
+} from "../../stores/indexStore";
+import "../../styles/ImageCarousel.css";
 
 export default function ImageCarousel({ kits, id }) {
   const [isImageLoading, setIsImageLoading] = useState(true);

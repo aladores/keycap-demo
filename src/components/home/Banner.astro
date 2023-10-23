@@ -1,0 +1,100 @@
+---
+const { bannerData } = Astro.props;
+---
+
+<section class="banner-container">
+  <img
+    src={bannerData.data.renders[0].imageSrc}
+    class="banner-image skeleton"
+  />
+  <div class="banner-info-wrapper">
+    <div class="banner-info-container">
+      <p class="text-small banner-label">
+        {bannerData.data.designer.toUpperCase()}
+      </p>
+      <h3 class="text-xl">{bannerData.data.title}</h3>
+      <p class="text-small banner-description">
+        {bannerData.data.description}
+      </p>
+    </div>
+
+    <a class="button-banner-link" href={`/keycap/${bannerData.id}`}>
+      <button class="button-banner text-normal">VIEW MORE</button>
+    </a>
+  </div>
+</section>
+
+<style>
+  .banner-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .banner-info-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .banner-info-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.5rem;
+    background-color: black;
+    padding: 2rem;
+    border-radius: 0rem 0rem 0.5rem 0.5rem;
+    color: white;
+  }
+
+  .banner-image {
+    object-fit: cover;
+    border-radius: 0.5rem 0.5rem 0rem 0rem;
+    width: 100%;
+    height: 100%;
+  }
+  .banner-label {
+    color: grey;
+  }
+  .banner-description {
+    margin-top: 0.75rem;
+  }
+
+  .button-banner-link {
+    align-self: end;
+  }
+
+  .button-banner {
+    background-color: black;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+    transition:
+      color,
+      background-color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .button-banner:hover {
+    color: black;
+    background-color: white;
+  }
+
+  @media (min-width: 768px) {
+    .banner-container {
+      grid-template-columns: 1.25fr 1fr;
+      grid-template-rows: 1fr;
+    }
+
+    .banner-container > img {
+      order: 1;
+    }
+
+    .banner-info-wrapper {
+      border-radius: 0.5rem 0rem 0rem 0.5rem;
+    }
+
+    .banner-image {
+      max-height: initial;
+      border-radius: 0rem 0.5rem 0.5rem 0rem;
+    }
+  }
+</style>

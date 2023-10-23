@@ -1,8 +1,8 @@
 import { useEffect } from "preact/hooks";
 import { useStore } from "@nanostores/preact";
-import { index, setIndex } from "../stores/indexStore";
+import { index, setIndex } from "../../stores/indexStore";
 
-import "../styles/KeycapButtons.css";
+import "../../styles/KeycapButtons.css";
 
 export default function KeycapButtons({ kits }) {
   const $index = useStore(index);

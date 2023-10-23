@@ -15,6 +15,10 @@
     cursor: pointer;
 }
 
+.keycap-button:hover {
+    background-color: rgb(194, 194, 194);
+}
+
 .active {
     color: white;
     background-color: black;

@@ -6,7 +6,7 @@ import KeycapButtons from "../../components/KeycapButtons.jsx";
 import PriceTable from "../../components/PriceTable.astro";
 import ColorBlock from "../../components/ColorBlock.astro";
 import { getCollection } from "astro:content";
-
+//import { themeDynamic } from "../../stores/themeStore";
 export async function getStaticPaths() {
   const keycaps = await getCollection("gmk");
   return keycaps.map((item) => {
@@ -18,7 +18,9 @@ export async function getStaticPaths() {
 }
 
 const { item } = Astro.props;
-
+// const currentThemeDynamic = themeDynamic.get();
+// console.log("HERE2:", themeDynamic.get());
+// console.log("HERE2:", currentThemeDynamic);
 function formatToDateWord(isoDate) {
   const newDate = new Date(isoDate);
   const options = { year: "numeric", month: "long" };
@@ -124,6 +126,10 @@ function formatToDateWord(isoDate) {
   </main>
 </Layout>
 <style>
+  /* body {
+    background-color: #fcafc0;
+    color: #f7f2ea;
+  } */
   .keycap-info-wrapper {
     display: flex;
     flex-direction: column;
@@ -187,3 +193,14 @@ function formatToDateWord(isoDate) {
     }
   }
 </style>
+
+<!-- <script is:inline define:vars={{ item, currentThemeDynamic }}>
+//If set to dynamic
+console.log("HERE: ", currentThemeDynamic);
+
+document.body.style.backgroundColor = item.data.colors[0].color.hex;
+document.body.style.color = item.data.colors[1].color.hex;
+
+const keycapTagsContainer = document.querySelector(".keycap-tags-container");
+keycapTagsContainer.style.color = "white";
+</script> -->

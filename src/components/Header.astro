@@ -1,14 +1,20 @@
 ---
-
+// import ThemeButtons from "./ThemeButtons.jsx";
 ---
 
 <header class="padding-bottom-1">
   <div class="header-container padding-bottom-1">
-    <div class="header-link">
-      <a href="/" class="text-2xl text-bold header-link">Keycap Demo</a>
+    <div class="header-left">
+      <div class="header-link">
+        <a href="/" class="text-2xl text-bold header-link">Keycap Demo</a>
+      </div>
+      <div class="header-link">
+        <a href="/all" class="text-base header-link">GMK</a>
+      </div>
     </div>
-    <div class="header-link">
-      <a href="/all" class="text-base header-link">GMK</a>
+    <div class="header-right">
+      <!-- <ThemeIcon /> -->
+      <!-- <ThemeButtons client:load /> -->
     </div>
   </div>
   <div class="grey-line"></div>
@@ -17,10 +23,15 @@
 <style>
   .header-container {
     display: flex;
-    align-items: end;
+    justify-content: space-between;
+    align-items: center;
     gap: 1rem;
   }
 
+  .header-left {
+    display: flex;
+    gap: 1rem;
+  }
   .header-link:hover {
     color: blue;
   }

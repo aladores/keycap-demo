@@ -1,0 +1,47 @@
+.theme-selector {
+    display: flex;
+    gap: 1rem;
+}
+
+.theme-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.theme-options {
+    display: flex;
+    position: absolute;
+    top: 60px;
+    z-index: 99;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+}
+
+.theme-options ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.theme-list-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 12px;
+    cursor: pointer;
+}
+
+.theme-options li:hover {
+    background-color: #f2f2f2;
+}
+
+.hidden {
+    display: none;
+}

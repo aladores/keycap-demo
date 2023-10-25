@@ -17,7 +17,7 @@ const keyCapHeaderSet = new Set(
 
 <Layout title="Keycap Demo">
   <main class="main-container">
-    <h2 class="text-2xl padding-bottom-1">GMK Keycaps</h2>
+    <h2 class="text-2xl padding-bottom-1 all-header">GMK Keycaps</h2>
     <ul class="keycap-list">
       {
         Array.from(keyCapHeaderSet).map((item) => {
@@ -40,7 +40,11 @@ const keyCapHeaderSet = new Set(
 </Layout>
 
 <style>
+  .all-header {
+    color: var(--primary-text);
+  }
   .keycap-list {
+    color: var(--primary-text);
     display: inline-flex;
     flex-direction: column;
   }

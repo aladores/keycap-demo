@@ -1,36 +1,74 @@
 /* CUSTOM STYLES */
 :root {
+    --black: #121212;
+    --dark-grey: #212121;
+    --grey: #535353;
+    --light-grey: #b3b3b3;
+    --lightest-grey: #f4f4f4;
+
     /*MAIN COLOR*/
-    --primary-text: black;
-    --secondary-text: grey;
-    --tertiary-text: white;
-    --primary-background: black;
+    --primary-text: var(--black);
+    --secondary-text: white;
+    --tertiary-text: var(--grey);
+    --primary-background: var(--black);
     --secondary-background: white;
+    --banner-background: var(--black);
+    --banner-label: var(--grey);
+    --card-background: var(--lightest-grey);
 
     /*BUTTON COLOR*/
-    --primary-button-background: black;
+    --primary-button-background: var(--black);
     --secondary-button-background: white;
-    --primary-button-text: black;
+    --primary-button-text: var(--black);
     --secondary-button-text: white;
-    --primary-button-border: black;
+    --primary-button-border: var(--black);
     --secondary-button-border: white;
-    --primary-button-hover: rgb(225, 225, 225);
+    --primary-button-hover: var(--light-grey);
 
     /*OTHER COLOR*/
-    --grey-line: rgb(225, 225, 225);
+    --grey-line: var(--light-grey);
     --hover-link-text: blue;
 
     /*TABLE COLOR*/
-    --table-border: rgb(225, 225, 225);
-    --table-even-row: #eaeaea;
+    --table-border: var(--light-grey);
+    --table-even-row: var(--lightest-grey);
 
     /*CAROUSEL*/
-    --carousel-background: #9d9d9d;
-    --carousel-active: #333;
+    --carousel-background: var(--light-grey);
+    --carousel-active: var(--dark-grey);
 }
 
 html {
     font-family: system-ui, sans-serif;
+}
+
+.dark {
+    --primary-text: white;
+    --secondary-text: white;
+    --tertiary-text: var(--light-grey);
+    --primary-background: white;
+    --secondary-background: var(--black);
+    --banner-background: var(--dark-grey);
+    --banner-label: var(--light-grey);
+    --card-background: var(--dark-grey);
+
+    /*BUTTON COLOR*/
+    --primary-button-background: white;
+    --secondary-button-background: var(--black);
+    --primary-button-text: white;
+    --secondary-button-text: var(--black);
+    --primary-button-border: var(--light-grey);
+    --secondary-button-border: var(--black);
+    --primary-button-hover: var(--lightest-grey);
+
+    /*OTHER COLOR*/
+    --hover-link-text: rgb(93, 187, 255);
+
+    /*TABLE COLOR*/
+    --table-border: var(--light-grey);
+    --table-even-row: var(--grey);
+    /*CAROUSEL*/
+    --carousel-active: white;
 }
 
 body {
@@ -113,13 +151,16 @@ a {
 /* BUTTONS */
 .primary-button {
     padding: 0.3rem 0.6rem 0.3rem 0.6rem;
+    color: var(--primary-button-text);
     border: 1px solid var(--primary-button-border);
     outline: none;
     background-color: var(--secondary-button-background);
+    transition: background-color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
     cursor: pointer;
 }
 
 .primary-button:hover {
+    color: var(--secondary-button-text);
     background-color: var(--primary-button-hover);
 }
 
@@ -127,8 +168,7 @@ a {
     background-color: var(--primary-button-background);
     color: var(--secondary-button-text);
     border: 1px solid var(--secondary-button-border);
-    transition:
-        background-color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+    transition: background-color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
     cursor: pointer;
 }
 

@@ -19,7 +19,9 @@ const { bannerData } = Astro.props;
     </div>
 
     <a class="button-banner-link" href={`/keycap/${bannerData.id}`}>
-      <button class="button-banner text-normal">VIEW MORE</button>
+      <button class="button-banner secondary-button text-normal"
+        >VIEW MORE</button
+      >
     </a>
   </div>
 </section>
@@ -39,10 +41,10 @@ const { bannerData } = Astro.props;
     flex-direction: column;
     justify-content: space-between;
     gap: 0.5rem;
-    background-color: black;
+    background-color: var(--primary-background);
     padding: 2rem;
     border-radius: 0rem 0rem 0.5rem 0.5rem;
-    color: white;
+    color: var(--tertiary-text);
   }
 
   .banner-image {
@@ -52,7 +54,7 @@ const { bannerData } = Astro.props;
     height: 100%;
   }
   .banner-label {
-    color: grey;
+    color: var(--secondary-text);
   }
   .banner-description {
     margin-top: 0.75rem;
@@ -63,19 +65,7 @@ const { bannerData } = Astro.props;
   }
 
   .button-banner {
-    background-color: black;
     padding: 0.5rem 1rem 0.5rem 1rem;
-    color: white;
-    border: 1px solid white;
-    cursor: pointer;
-    transition:
-      color,
-      background-color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
-  }
-
-  .button-banner:hover {
-    color: black;
-    background-color: white;
   }
 
   @media (min-width: 768px) {

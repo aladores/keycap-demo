@@ -54,7 +54,7 @@ export default function ImageCarouselExtras({ extras, element }) {
     <section className="carousel-extras-container">
       <div className="carousel-container">
         <div className="carousel-slide-container">
-          <div className={`carousel-slide carousel-slide-${element}`}>
+          <div className={`carousel-slide carousel-slide-extra carousel-slide-${element}`}>
             {extras.map((item, index) => {
               return (
                 <img
@@ -73,7 +73,7 @@ export default function ImageCarouselExtras({ extras, element }) {
           {extras.map((item, index) => {
             return (
               <div
-                className={`extra-dot-${element} ${
+                className={`carousel-dot extra-dot-${element} ${
                   index === currIndex ? " active" : ""
                 }`}
                 onClick={() => {
@@ -88,7 +88,7 @@ export default function ImageCarouselExtras({ extras, element }) {
       <div className="keycap-button-container extras-button-container">
         {extras.map((item, index) => (
           <button
-            className={`keycap-button-${element} ${
+            className={`primary-button keycap-button-${element} ${
               index === currIndex ? " active" : ""
             }`}
             onClick={() => handleClick(index)}

@@ -18,7 +18,7 @@ export default function KeycapButtons({ kits }) {
     <div className="keycap-button-container">
       {kits.map((item, index) => (
         <button
-          className={`keycap-button ${index === $index ? " active" : ""}`}
+          className={`primary-button keycap-button ${index === $index ? " active" : ""}`}
           onClick={() => handleButtonClick(index)}
           key={index}
         >

@@ -16,11 +16,7 @@
     transition: transform 0.3s ease-in-out;
 }
 
-
-
-.carousel-slide-deskmats,
-.carousel-slide-collabs,
-.carousel-slide-renders {
+.carousel-slide-extra {
     height: 250px;
 }
 
@@ -38,13 +34,13 @@
 
 .mini-thumbnail {
     border-radius: 0.3rem;
-    border: 2px solid white;
+    border: 2px solid var(--secondary-background);
     width: 115px;
     cursor: pointer;
 }
 
 .mini-thumbnail.active {
-    outline: 1px solid black;
+    outline: 1px solid var(--primary-button-border);
 }
 
 .carousel-arrow {
@@ -81,25 +77,18 @@
     margin-top: 0.5rem;
 }
 
-
-.carousel-dot,
-.extra-dot-deskmats,
-.extra-dot-collabs,
-.extra-dot-renders {
+.carousel-dot {
     display: inline-block;
     width: 10px;
     height: 10px;
-    background-color: #9d9d9d;
+    background-color: var(--carousel-background);
     border-radius: 50%;
     cursor: pointer;
 }
 
-
-
 .carousel-dot.active {
-    background-color: #333;
+    background-color: var(--carousel-active);
 }
-
 
 /* EXTRAS */
 .carousel-extras-container {
@@ -116,8 +105,6 @@
     width: 100%;
     height: 300px;
 }
-
-
 
 @media (min-width: 768px) {
     .mini-thumbnail-container {

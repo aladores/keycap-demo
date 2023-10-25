@@ -4,24 +4,8 @@
     gap: 0.5rem;
 }
 
-.keycap-button,
-.keycap-button-deskmats,
-.keycap-button-collabs,
-.keycap-button-renders {
-    padding: 5px 10px 5px 10px;
-    border: 1px solid black;
-    outline: none;
-    background-color: white;
-    cursor: pointer;
-}
-
-.keycap-button:hover {
-    background-color: rgb(194, 194, 194);
-}
-
 .active {
-    color: white;
-    background-color: black;
-
+    color: var(--secondary-button-text);
+    background-color: var(--primary-button-background);
     transition: all 0.1s;
 }

@@ -40,7 +40,7 @@
 }
 
 .mini-thumbnail.active {
-    outline: 1px solid var(--primary-button-border);
+    outline: 1.5px solid var(--primary-button-border);
 }
 
 .carousel-arrow {

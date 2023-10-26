@@ -70,19 +70,27 @@
       },
       {
         "name": "Render 2",
-        "imageSrc": "/assets/gmk_peach_blossom_r2/renders/render_1.webp"
+        "imageSrc": "/assets/gmk_peach_blossom_r2/renders/render_2.webp"
       },
       {
         "name": "Render 3",
-        "imageSrc": "/assets/gmk_peach_blossom_r2/renders/render_1.webp"
+        "imageSrc": "/assets/gmk_peach_blossom_r2/renders/render_3.webp"
       },
       {
         "name": "Render 4",
-        "imageSrc": "/assets/gmk_peach_blossom_r2/renders/render_1.webp"
+        "imageSrc": "/assets/gmk_peach_blossom_r2/renders/render_4.webp"
       },
       {
         "name": "Render 5",
-        "imageSrc": "/assets/gmk_peach_blossom_r2/renders/render_1.webp"
+        "imageSrc": "/assets/gmk_peach_blossom_r2/renders/render_5.webp"
+      },
+      {
+        "name": "Render 6",
+        "imageSrc": "/assets/gmk_peach_blossom_r2/renders/render_6.webp"
+      },
+      {
+        "name": "Render 7",
+        "imageSrc": "/assets/gmk_peach_blossom_r2/renders/render_7.webp"
       }
     ],
     "manufacturer": "GMK",

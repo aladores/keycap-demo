@@ -1,0 +1,138 @@
+{
+    "collabs": [
+      {
+        "imageSrc": "/assets/gmk_cafe/collabs/collab_1.webp",
+        "name": "Préparer"
+      },
+      {
+        "imageSrc": "/assets/gmk_cafe/collabs/collab_2.webp",
+        "name": "Bean"
+      }
+    ],
+    "colors": [
+      {
+        "color": {
+          "code": "GMK L9",
+          "hex": "#d8d2c3"
+        },
+        "name": "Base"
+      },
+      {
+        "color": {
+          "code": "RAL 8019",
+          "hex": "#3A3333"
+        },
+        "name": "Legends"
+      },
+      {
+        "color": {
+          "code": "RAL 1001",
+          "hex": "#d0b084"
+        },
+        "name": "Modifiers"
+      }
+    ],
+    "dates": {
+      "groupBuy": "2019-01",
+      "shipped": "2020-04"
+    },
+    "description": "As coffee Café gained popularity in Italy in the 16th century, clergymen pushed the church to ban this new, scary drink as satanic. This discussion was brought all the way to the Pope himself: Clement VIII. The literal freakin' Pope took one sip and found this beverage so wonderful he remarked how they should baptize it and keep it for themselves. Café is incredible enough to change the mind of a pope and it's darn sure wonderful enough to put on your keyboard, too.",
+    "designer": "Langelandia",
+    "deskmats": [
+      {
+        "imageSrc": "/assets/gmk_cafe/deskmats/deskmat_1.webp",
+        "name": "Deskmat 1"
+      }
+    ],
+    "groupBuyLink": "https://geekhack.org/index.php?topic=102580.0",
+    "keyArt": [],
+    "kits": [
+      {
+        "name": "Base",
+        "price": {
+          "USD": "125.00",
+          "EUR": "129.00",
+          "CAD": "175.00",
+          "SGD": "185.00",
+          "AUD": "200.35"
+        },
+        "imageSrc": "/assets/gmk_cafe/kits/kit_1.webp"
+      },
+      {
+        "name": "Sugar - Numpad / ISO",
+        "price": {
+            "USD": "66.00",
+            "EUR": "67.00",
+            "CAD": "95.00",
+            "SGD": "98.00",
+            "AUD": "105.80"
+          },
+        "imageSrc": "/assets/gmk_cafe/kits/kit_2.webp"
+      },
+      {
+        "name": "Dark - Alphas",
+        "price": {
+            "USD": "48.00",
+            "EUR": "50.00",
+            "CAD": "67.00",
+            "SGD": "71.00",
+            "AUD": "76.95"
+          },
+        "imageSrc": "/assets/gmk_cafe/kits/kit_3.webp"
+      },
+     
+      {
+        "name": "Extra Shots - Spacebars",
+        "price": {
+            "USD": "23.00",
+            "EUR": "22.00",
+            "CAD": "33.00",
+            "SGD": "34.00",
+            "AUD": "36.85"
+          },
+        "imageSrc": "/assets/gmk_cafe/kits/kit_4.webp"
+      },
+      {
+        "name": "Special Blends - 40s / Ortho",
+        "price": {
+          "USD": "52.00",
+          "EUR": "49.00",
+          "CAD": "75.00",
+          "SGD": "77.00",
+          "AUD": "83.35"
+        },
+        "imageSrc": "/assets/gmk_cafe/kits/kit_5.webp"
+      }
+    ],
+    "renders": [
+      {
+        "name": "Think 6.5",
+        "imageSrc": "/assets/gmk_cafe/renders/render_1.webp"
+      },
+      {
+        "name": "TGR 910 re",
+        "imageSrc": "/assets/gmk_cafe/renders/render_2.webp"
+      },
+      {
+        "name": "Satisfaction 75",
+        "imageSrc": "/assets/gmk_cafe/renders/render_3.webp"
+      },
+      {
+        "name": "Brutal 60",
+        "imageSrc": "/assets/gmk_cafe/renders/render_4.webp"
+      },
+      {
+        "name": "Dharma",
+        "imageSrc": "/assets/gmk_cafe/renders/render_5.webp"
+      },
+      {
+        "name": "RAMA M60-A",
+        "imageSrc": "/assets/gmk_cafe/renders/render_6.webp"
+      }
+    
+    ],
+    "manufacturer": "GMK",
+    "title": "Cafe",
+    "banner": false,
+    "featured": true
+  }

@@ -1,16 +1,18 @@
 import Fuse from "fuse.js";
-import { useState } from "preact/hooks";
-import "../styles/SearchBar.css";
+import { useState, useEffect, useRef } from "preact/hooks";
 const options = {
-  keys: ["data.title","data.designer","data.tags","data.colors.color.tag"],
+  keys: ["data.title", "data.designer", "data.tags", "data.colors.color.tag"],
   minMatchCharLength: 2,
   threshold: 0,
 };
 
 export default function Search({ searchList }) {
+  const [isResultsOpen, setIsResultsOpen] = useState(false);
   const [query, setQuery] = useState("");
   const fuse = new Fuse(searchList, options);
 
+  const searchInputRef = useRef(null);
+  const resultsContainerRef = useRef(null);
   const posts = fuse
     .search(query)
     .map((result) => result.item)
@@ -19,7 +21,26 @@ export default function Search({ searchList }) {
   function handleSearch({ target = {} }) {
     const { value } = target;
     setQuery(value);
+    setIsResultsOpen(true);
   }
+
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (
+        searchInputRef.current &&
+        !searchInputRef.current.contains(event.target) &&
+        resultsContainerRef.current &&
+        !resultsContainerRef.current.contains(event.target)
+      ) {
+        setIsResultsOpen(false);
+      }
+    }
+
+    document.addEventListener("click", handleClickOutside);
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, []);
 
   return (
     <div className="search-bar-container">
@@ -45,10 +66,11 @@ export default function Search({ searchList }) {
           value={query}
           onInput={handleSearch}
           placeholder="Search..."
+          ref={searchInputRef}
         />
       </div>
-      {query.length > 1 && (
-        <div className="search-results text-small">
+      {query.length > 1 && isResultsOpen && (
+        <div className="search-results text-small" ref={resultsContainerRef}>
           <p className="search-result-string text-small">
             {" "}
             Found {posts.length} {posts.length === 1 ? "result" : "results"} for

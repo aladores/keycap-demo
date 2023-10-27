@@ -2,10 +2,9 @@ import Fuse from "fuse.js";
 import { useState } from "preact/hooks";
 import "../styles/SearchBar.css";
 const options = {
-  keys: ["data.title"],
-  includeMatches: true,
+  keys: ["data.title","data.designer","data.tags","data.colors.color.tag"],
   minMatchCharLength: 2,
-  threshold: 0.5,
+  threshold: 0,
 };
 
 export default function Search({ searchList }) {

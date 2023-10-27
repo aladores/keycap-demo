@@ -17,21 +17,24 @@
       {
         "color": {
           "code": "Pantone 445 C",
-          "hex": "#505759"
+          "hex": "#505759",
+          "tag": "Grey"
         },
         "name": "Base"
       },
       {
         "color": {
           "code": "Pantone 1505 C",
-          "hex": "#ff6900"
+          "hex": "#ff6900",
+          "tag": "Orange"
         },
         "name": "Legends"
       },
       {
         "color": {
           "code": "Pantone 426 C",
-          "hex": "#f7f2ea"
+          "hex": "#25282a",
+          "tag": "Grey"
         },
         "name": "Modifiers"
       }
@@ -148,6 +151,7 @@
     ],
     "manufacturer": "GMK",
     "title": "Cinder",
+    "tags":["Dark"],
     "banner": false,
     "featured": false
   }

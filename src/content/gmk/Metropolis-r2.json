@@ -18,28 +18,32 @@
         "name": "Base",
         "color": {
           "code": "Pantone 5395c",
-          "hex": "#091f2c"
+          "hex": "#091f2c",
+          "tag":"Blue"
         }
       },
       {
         "name": "Legends",
         "color": {
           "code": "Pantone 333c",
-          "hex": "#3cdbc0"
+          "hex": "#3cdbc0",
+          "tag":"Teal"
         }
       },
       {
         "name": "Modifiers",
         "color": {
           "code": "Pantone 142c",
-          "hex": "#f1be48"
+          "hex": "#f1be48",
+          "tag":"Yellow"
         }
       },
       {
         "name": "Modifiers",
         "color": {
           "code": "Pantone 179c",
-          "hex": "#e03c31"
+          "hex": "#e03c31",
+          "tag":"Red"
         }
       }
     ],
@@ -122,6 +126,7 @@
     ],
     "manufacturer": "GMK",
     "title": "Metropolis r2",
+    "tags":["Dark"],
     "banner": false,
     "featured": true
   }

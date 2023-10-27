@@ -13,21 +13,24 @@
       {
         "color": {
           "code": "GMK L9",
-          "hex": "#d8d2c3"
+          "hex": "#d8d2c3",
+          "tag": "Beige"
         },
         "name": "Base"
       },
       {
         "color": {
           "code": "RAL 8019",
-          "hex": "#3A3333"
+          "hex": "#3A3333",
+          "tag": "Brown"
         },
         "name": "Legends"
       },
       {
         "color": {
           "code": "RAL 1001",
-          "hex": "#d0b084"
+          "hex": "#d0b084",
+          "tag": "Brown"
         },
         "name": "Modifiers"
       }
@@ -80,7 +83,6 @@
           },
         "imageSrc": "/assets/gmk_cafe/kits/kit_3.webp"
       },
-     
       {
         "name": "Extra Shots - Spacebars",
         "price": {
@@ -129,10 +131,10 @@
         "name": "RAMA M60-A",
         "imageSrc": "/assets/gmk_cafe/renders/render_6.webp"
       }
-    
     ],
     "manufacturer": "GMK",
     "title": "Cafe",
+    "tags":["Light"],
     "banner": false,
     "featured": true
   }

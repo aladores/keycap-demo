@@ -17,14 +17,16 @@
     {
       "color": {
         "code": "GMK CR",
-        "hex": "#171718"
+        "hex": "#171718",
+        "tag":"Black"
       },
       "name": "Base"
     },
     {
       "color": {
         "code": "RAL 1013",
-        "hex": "#EAE6CA"
+        "hex": "#EAE6CA",
+        "tag":"Beige"
       },
       "name": "Legends"
     }
@@ -96,6 +98,7 @@
   ],
   "manufacturer": "GMK",
   "title": "Noire",
+  "tags":["Light"],
   "banner": true,
   "featured": false
 }

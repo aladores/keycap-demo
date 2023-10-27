@@ -17,14 +17,16 @@
     {
       "color": {
         "code": "Custom Blue (RAL)",
-        "hex": "#006A93"
+        "hex": "#006A93",
+        "tag": "Blue"
       },
       "name": "Base"
     },
     {
       "color": {
         "code": "GMK WS1",
-        "hex": "#f7f2ea"
+        "hex": "#f7f2ea",
+        "tag": "White"
       },
       "name": "Legends"
     }
@@ -130,6 +132,7 @@
   ],
   "manufacturer": "GMK",
   "title": "Masterpiece",
+  "tags":["Dark"],
   "banner": false,
   "featured": true
 }

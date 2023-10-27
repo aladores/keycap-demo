@@ -9,21 +9,24 @@
       {
         "color": {
           "code": "GMK CP",
-          "hex": "#e1dbd1"
+          "hex": "#e1dbd1",
+          "tag":"Beige"
         },
         "name": "Base"
       },
       {
         "color": {
           "code": "PATONE 16-1546 TCX",
-          "hex": "#ff6f61"
+          "hex": "#ff6f61",
+          "tag":"Red"
         },
         "name": "Modifiers"
       },
       {
         "color": {
           "code": "PATONE 13-4810 TCX",
-          "hex": "#98dddf"
+          "hex": "#98dddf",
+          "tag": "Blue"
         },
         "name": "Accent"
       }
@@ -121,6 +124,7 @@
     ],
     "manufacturer": "GMK",
     "title": "Coral r2",
+    "tags":["Light"],
     "banner": false,
     "featured": false
   }

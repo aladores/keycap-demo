@@ -13,14 +13,16 @@
       {
         "color": {
           "code": "Pantone 1767C",
-          "hex": "#fcafc0"
+          "hex": "#fcafc0",
+          "tag":"Pink"
         },
         "name": "Base"
       },
       {
         "color": {
           "code": "WS1",
-          "hex": "#f7f2ea"
+          "hex": "#f7f2ea",
+          "tag": "White"
         },
         "name": "Legends"
       }
@@ -95,6 +97,7 @@
     ],
     "manufacturer": "GMK",
     "title": "Peach Blossom r2",
+    "tags":["Light"],
     "banner": false,
     "featured": false
   }

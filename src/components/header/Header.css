@@ -1,3 +1,4 @@
+/* HEADER */
 .header-container {
     display: flex;
     justify-content: space-between;
@@ -25,38 +26,22 @@
     border-bottom: 1px var(--grey-line) solid;
 }
 
-@media (max-width: 640px) {
-    .header-container {
-        display: flex;
-        justify-content: end;
-        align-items: center;
-        gap: 1rem;
-    }
-
-    .header-right {
-        display: block;
-        background-color: blue;
-    }
-}
-
+/* SEARCH */
 .search-bar-container {
-    width: 100%;
+    position: relative;
 }
 
 .search-bar {
-    display: flex;
+    display: none;
+    align-items: center;
+
     box-sizing: border-box;
     align-items: center;
     gap: 0.5rem;
     border-radius: 0.5rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
     background-color: var(--secondary-background);
     border: 1px var(--light-grey) solid;
-    padding: 0.5rem 1rem 0.5rem 1rem;
-    width: 100%;
-}
-
-.search-bar.visible {
-    display: flex;
 }
 
 .search-input {
@@ -67,18 +52,22 @@
 }
 
 .search-results {
+    display: none;
+    flex-direction: column;
     box-sizing: border-box;
     position: absolute;
     z-index: 99;
-    background-color: grey;
-    width: 300px;
-    background-color: var(--secondary-background);
-    border: 1px var(--light-grey) solid;
+    width: 100%;
     border-radius: 0.5rem;
     margin-top: 0.5rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    /* background-color: var(--secondary-background); */
+    background-color: var(--secondary-background);
+    border: 1px var(--light-grey) solid;
+}
+
+.search-result-string {
+    word-wrap: break-word;
 }
 
 .search-result-list {
@@ -117,8 +106,47 @@
     width: 20px;
 }
 
+/* SEARCH MOBILE ONLY */
+.search-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    background-color: var(--secondary-background);
+}
+
+.search-button-close {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    background-color: var(--secondary-background);
+}
+
+.search-bar.expanded,
+.search-results.expanded {
+    display: flex;
+}
+
+.header-right.expanded {
+    width: 100%;
+}
+
 @media (min-width: 640px) {
     .search-bar-container {
         width: 300px;
+    }
+
+    .search-bar,
+    .search-results {
+        display: flex;
+    }
+
+    .search-button,
+    .search-button-close {
+        display: none;
     }
 }

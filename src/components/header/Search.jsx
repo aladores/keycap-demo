@@ -12,6 +12,8 @@ export default function Search({
   isSearchBarOpen,
   setIsSearchBarOpen,
 }) {
+  const [isInputFocused, setIsInputFocused] = useState(false);
+
   const [isResultsOpen, setIsResultsOpen] = useState(false);
   const [query, setQuery] = useState('');
   const fuse = new Fuse(searchList, options);
@@ -77,7 +79,10 @@ export default function Search({
         </button>
       )}
 
-      <div className={`search-bar ${isSearchBarOpen ? 'expanded' : ''}`}>
+      <div
+        className={`search-bar ${isSearchBarOpen ? 'expanded' : ''} ${
+          isInputFocused ? 'focused' : ''
+        }`}>
         <svg
           height='20'
           width='20'
@@ -99,6 +104,8 @@ export default function Search({
           onInput={handleSearch}
           placeholder='Search...'
           ref={searchInputRef}
+          onFocus={() => setIsInputFocused(true)}
+          onBlur={() => setIsInputFocused(false)}
         />
 
         <button onClick={handleSearchBarClose} className='search-button-close'>
@@ -121,9 +128,8 @@ export default function Search({
           }`}
           ref={resultsContainerRef}>
           <p className='search-result-string text-small'>
-            {' '}
-            Found {posts.length} {posts.length === 1 ? 'result' : 'results'} for
-            '{query}'{' '}
+            {`Found ${posts.length} 
+            ${posts.length === 1 ? 'result' : 'results'} for '${query}'`}
           </p>
 
           <ul className='search-result-list'>

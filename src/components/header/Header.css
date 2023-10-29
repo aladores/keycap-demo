@@ -31,10 +31,13 @@
     position: relative;
 }
 
+.search-bar-container:focus {
+    border: 1px blue solid;
+}
+
 .search-bar {
     display: none;
     align-items: center;
-
     box-sizing: border-box;
     align-items: center;
     gap: 0.5rem;
@@ -42,6 +45,10 @@
     padding: 0.5rem 1rem 0.5rem 1rem;
     background-color: var(--secondary-background);
     border: 1px var(--light-grey) solid;
+}
+
+.search-bar.focused {
+    outline: 2px solid var(--hover-link-text);
 }
 
 .search-input {

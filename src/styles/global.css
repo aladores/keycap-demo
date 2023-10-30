@@ -168,7 +168,7 @@ a {
 
 .primary-button:focus,
 .secondary-button:focus {
-    border: 2px var(--hover-link-text) solid;
+    outline: 2px var(--hover-link-text) solid;
 }
 
 .secondary-button {

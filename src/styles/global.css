@@ -75,10 +75,11 @@ body {
     display: flex;
     flex-direction: column;
     margin: auto;
+    min-height: 100vh;
     padding: 1rem;
     width: 1024px;
-    max-width: calc(100% - 2rem);
     font-size: 20px;
+    max-width: calc(100% - 2rem);
     line-height: 1.6;
     background-color: var(--secondary-background);
 }
@@ -86,6 +87,7 @@ body {
 .main-container {
     display: flex;
     flex-direction: column;
+    flex: 1;
     gap: 1rem;
     padding-top: 1rem;
     padding-bottom: 1rem;

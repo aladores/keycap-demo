@@ -1,24 +1,23 @@
 ---
-const { id, manufacturer, title, imageSrc, accentColor, designer } =
-  Astro.props;
+const { id, manufacturer, title, imageSrc, designer } = Astro.props;
 ---
 
 <a href={`/keycap/${id}`}>
-  <li class="card">
-    <div class="card-image-container">
+  <li class='card'>
+    <div class='card-image-container'>
       <img
         src={imageSrc}
-        alt=""
-        class="card-image skeleton"
+        alt=''
+        class='card-image skeleton'
         transition:name={`record-${id}`}
       />
     </div>
-    <div class="card-info-container">
-      <p class="card-designer text-xs">
+    <div class='card-info-container'>
+      <p class='card-designer text-xs'>
         {designer.toUpperCase()}
       </p>
-      <h3 class="card-title text-large">
-        {manufacturer + " " + title}
+      <h3 class='card-title text-large'>
+        {manufacturer + ' ' + title}
       </h3>
     </div>
   </li>

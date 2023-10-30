@@ -1,14 +1,14 @@
 ---
-import Layout from "../../layouts/Layout.astro";
-import ImageCarousel from "../../components/keycap/ImageCarousel.jsx";
-import ImageCarouselExtras from "../../components/keycap/ImageCarouselExtras.jsx";
-import KeycapButtons from "../../components/keycap/KeycapButtons.jsx";
-import PriceTable from "../../components/keycap/PriceTable.astro";
-import ColorBlock from "../../components/keycap/ColorBlock.astro";
-import { getCollection } from "astro:content";
+import Layout from '../../layouts/Layout.astro';
+import ImageCarousel from '../../components/keycap/ImageCarousel.jsx';
+import ImageCarouselExtras from '../../components/keycap/ImageCarouselExtras.jsx';
+import KeycapButtons from '../../components/keycap/KeycapButtons.jsx';
+import PriceTable from '../../components/keycap/PriceTable.astro';
+import ColorBlock from '../../components/keycap/ColorBlock.astro';
+import { getCollection } from 'astro:content';
 //import { themeDynamic } from "../../stores/themeStore";
 export async function getStaticPaths() {
-  const keycaps = await getCollection("gmk");
+  const keycaps = await getCollection('gmk');
   return keycaps.map((item) => {
     return {
       params: { id: item.id },
@@ -20,73 +20,79 @@ export async function getStaticPaths() {
 const { item } = Astro.props;
 function formatToDateWord(isoDate) {
   const newDate = new Date(isoDate);
-  const options = { year: "numeric", month: "long" };
+  const options = { year: 'numeric', month: 'long' };
   return newDate.toLocaleDateString(undefined, options);
 }
 ---
 
-<Layout title="Keycap Demo">
-  <main class="keycap-info-wrapper main-container">
-    <section class="keycap-info-container">
-      <div class="keycap-carousel-container">
+<Layout title='Keycap Demo'>
+  <main class='keycap-info-wrapper main-container'>
+    <section class='keycap-info-container'>
+      <div class='keycap-carousel-container'>
         <ImageCarousel client:load kits={item.data.kits} id={item.id} />
       </div>
-      <div class="keycap-main-info-container">
+      <div class='keycap-main-info-container'>
         <div>
-          <h2 class="text-3xl">
-            {item.data.manufacturer + " " + item.data.title}
+          <h2 class='text-3xl'>
+            {item.data.manufacturer + ' ' + item.data.title}
           </h2>
-          <div class="keycap-tags-container">
+          <div class='keycap-tags-container'>
             <div>
-              <p class="text-small text-bold">Designed by</p>
-              <p class="text-small">{item.data.designer}</p>
+              <p class='text-small text-bold'>Designed by</p>
+              <p class='text-small'>{item.data.designer}</p>
             </div>
             <div>
-              <p class="text-small text-bold">Group buy</p>
-              <p class="text-small">
+              <p class='text-small text-bold'>Group buy</p>
+              <p class='text-small'>
                 {formatToDateWord(item.data.dates.groupBuy)}
               </p>
             </div>
             <div>
-              <p class="text-small text-bold">Shipped</p>
-              <p class="text-small">
+              <p class='text-small text-bold'>Shipped</p>
+              <p class='text-small'>
                 {formatToDateWord(item.data.dates.shipped)}
               </p>
             </div>
           </div>
         </div>
-        <p class="text-base">{item.data.description}</p>
+        <p class='text-base'>{item.data.description}</p>
         <div>
-          <h3 class="text-xl">Kits</h3>
+          <h3 class='text-xl'>Kits</h3>
           <KeycapButtons client:load kits={item.data.kits} />
         </div>
 
         <div>
-          <h3 class="text-xl">Colors</h3>
-          <ColorBlock colors={item.data.colors} />
+          <h3 class='text-xl'>Colors</h3>
+          {
+            Object.keys(item.data.colors).length !== 0 ? (
+              <ColorBlock colors={item.data.colors} />
+            ) : (
+              <p class='text-base'>No color information available.</p>
+            )
+          }
         </div>
 
         <div>
-          <h3 class="text-xl">Pricing</h3>
+          <h3 class='text-xl'>Pricing</h3>
           {
             Object.keys(item.data.kits[0].price).length !== 0 ? (
               <PriceTable kits={item.data.kits} />
             ) : (
-              <p class="text-base">No pricing available.</p>
+              <p class='text-base'>No pricing information available.</p>
             )
           }
         </div>
       </div>
     </section>
-    <section class="keycap-extras-container">
+    <section class='keycap-extras-container'>
       {
         item.data.deskmats.length !== 0 && (
           <div>
-            <h3 class="text-xl">Deskmats</h3>
+            <h3 class='text-xl'>Deskmats</h3>
             <ImageCarouselExtras
               client:load
               extras={item.data.deskmats}
-              element="deskmats"
+              element='deskmats'
             />
           </div>
         )
@@ -94,11 +100,11 @@ function formatToDateWord(isoDate) {
       {
         item.data.renders.length !== 0 && (
           <div>
-            <h3 class="text-xl">Renders</h3>
+            <h3 class='text-xl'>Renders</h3>
             <ImageCarouselExtras
               client:load
               extras={item.data.renders}
-              element="renders"
+              element='renders'
             />
           </div>
         )
@@ -106,19 +112,19 @@ function formatToDateWord(isoDate) {
       {
         item.data.collabs.length !== 0 && (
           <div>
-            <h3 class="text-xl">Collabs</h3>
+            <h3 class='text-xl'>Collabs</h3>
             <ImageCarouselExtras
               client:load
               extras={item.data.collabs}
-              element="collabs"
+              element='collabs'
             />
           </div>
         )
       }
     </section>
-    <section class="reference-container">
+    <section class='reference-container'>
       <p>Reference:</p>
-      <a href={item.data.groupBuyLink} class="reference-link">Link</a>
+      <a href={item.data.groupBuyLink} class='reference-link'>Link</a>
     </section>
   </main>
 </Layout>

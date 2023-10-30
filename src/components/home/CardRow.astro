@@ -1,11 +1,11 @@
 ---
-import Card from "./Card.astro";
+import Card from './Card.astro';
 const { cardData, title } = Astro.props;
 ---
 
 <section>
-  <h2 class="text-2xl header-main-subtitle">{title}</h2>
-  <ul role="list" class="card-grid">
+  <h2 class='text-2xl header-main-subtitle'>{title}</h2>
+  <ul role='list' class='card-grid'>
     {
       cardData.map((item) => {
         return (
@@ -14,7 +14,6 @@ const { cardData, title } = Astro.props;
             manufacturer={item.data.manufacturer}
             title={item.data.title}
             imageSrc={item.data.kits[0].imageSrc}
-            accentColor={item.data.colors[1].color.hex}
             designer={item.data.designer}
           />
         );

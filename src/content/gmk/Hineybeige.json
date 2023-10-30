@@ -1,0 +1,59 @@
+{
+  "collabs": [
+    {
+      "imageSrc": "/assets/gmk_hineybeige/collabs/collab_1.webp",
+      "name": "Hibi"
+    }
+  ],
+  "colors": [],
+  "dates": {
+    "groupBuy": "2022-11",
+    "shipped": "2023-10"
+  },
+  "description": "Hi, I love OG style Cherry/GMK beige keycaps. I own most sets that have previously ran and I wanted to create one that would fit what I want in terms of aesthetic as well as compatibility for boards that I use or design and sell.",
+  "designer": "hineybush",
+  "deskmats": [],
+  "groupBuyLink": "https://geekhack.org/index.php?topic=116099.0",
+  "keyArt": [
+    {
+      "name:": "banner",
+      "imageSrc": "/assets/gmk_hineybeige/keyArt/keyArt_1.webp"
+    }
+  ],
+  "kits": [
+    {
+      "name": "Base",
+      "price": {
+        "USD": "99.00",
+        "CAD": "150.00",
+        "EUR": "122.00",
+        "GBP": "105.00",
+        "AUD": "175.00"
+      },
+      "imageSrc": "/assets/gmk_hineybeige/kits/kit_1.webp"
+    }
+  ],
+  "renders": [
+    {
+      "name": "Green Ibis WKL",
+      "imageSrc": "/assets/gmk_hineybeige/renders/render_1.webp"
+    },
+    {
+      "name": "7V",
+      "imageSrc": "/assets/gmk_hineybeige/renders/render_2.webp"
+    },
+    {
+      "name": "No. 1/60",
+      "imageSrc": "/assets/gmk_hineybeige/renders/render_3.webp"
+    },
+    {
+      "name": "NK65",
+      "imageSrc": "/assets/gmk_hineybeige/renders/render_4.webp"
+    }
+  ],
+  "manufacturer": "GMK",
+  "title": "Hineybeige",
+  "tags": ["Light", "Beige"],
+  "banner": false,
+  "featured": false
+}

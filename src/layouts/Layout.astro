@@ -4,7 +4,7 @@ interface Props {
 }
 import { ViewTransitions } from 'astro:transitions';
 import Header from '../components/header/Header.jsx';
-// import Footer from "../components/Footer.astro";
+import Footer from '../components/Footer.astro';
 import '../styles/reset.css';
 import '../styles/global.css';
 import '../components/header/Header.css';
@@ -27,5 +27,6 @@ const gmkKeycaps = await getCollection('gmk');
   <body>
     <Header client:only='preact' searchList={gmkKeycaps} />
     <slot />
+    <Footer />
   </body>
 </html>

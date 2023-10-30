@@ -1,11 +1,11 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import Layout from '../layouts/Layout.astro';
 
-import Banner from "../components/home/Banner.astro";
-import CardRow from "../components/home/CardRow.astro";
-import { getCollection } from "astro:content";
+import Banner from '../components/home/Banner.astro';
+import CardRow from '../components/home/CardRow.astro';
+import { getCollection } from 'astro:content';
 
-const gmkKeycaps = await getCollection("gmk");
+const gmkKeycaps = await getCollection('gmk');
 
 const featuredData = gmkKeycaps.filter((item) => {
   return item.data.featured === true;
@@ -22,10 +22,10 @@ const latestData = [...gmkKeycaps]
   .slice(0, 3);
 ---
 
-<Layout title="Keycap Demo">
-  <main class="main-container">
+<Layout title='Keycap Demo'>
+  <main class='main-container'>
     <Banner bannerData={bannerData[0]} />
-    <CardRow cardData={featuredData} title="Featured" />
-    <CardRow cardData={latestData} title="Latest" />
+    <CardRow cardData={featuredData} title='Featured' />
+    <CardRow cardData={latestData} title='Latest' />
   </main>
 </Layout>

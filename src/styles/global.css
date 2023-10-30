@@ -166,6 +166,11 @@ a {
     background-color: var(--primary-button-hover);
 }
 
+.primary-button:focus,
+.secondary-button:focus {
+    border: 2px var(--hover-link-text) solid;
+}
+
 .secondary-button {
     background-color: var(--primary-button-background);
     color: var(--secondary-button-text);

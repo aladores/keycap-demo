@@ -5,12 +5,30 @@
 <footer class='footer'>
   <div class='grey-line'></div>
   <div class='footer-main-container text-base'>
-    <div>
-      Source Code: <a
-        href='https://github.com/aladores/keycap-demo'
-        target='_blank'
-        class='footer-link'>github</a
-      >
+    <div class='footer-left-side'>
+      <div>
+        Source Code: <a
+          href='https://github.com/aladores/keycap-demo'
+          target='_blank'
+          class='footer-link'>Github</a
+        >
+      </div>
+
+      <div>
+        Inspired by: <a
+          href='https://matrixzj.github.io/'
+          '
+          target='_blank'
+          class='footer-link'>Keycaps Info</a
+        >
+
+         and
+        <a
+          href='https://keycaplendar.firebaseapp.com/'
+          target='_blank'
+          class='footer-link'>Keycaplendar</a
+        >
+      </div>
     </div>
     <div>
       Svgs: <a
@@ -29,6 +47,10 @@
     padding-top: 1rem;
   }
 
+  .footer-left-side {
+    display: flex;
+    flex-direction: column;
+  }
   .footer-link {
     text-decoration: underline;
   }

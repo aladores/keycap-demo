@@ -1,13 +1,13 @@
 ---
-const { id, manufacturer, title, imageSrc, designer } = Astro.props;
+const { id, manufacturer, title, kit, designer } = Astro.props;
 ---
 
-<li class='card' role='button'>
-  <a href={`/keycap/${id}`}>
+<li class='card' role='listitem'>
+  <a href={`/keycap/${id}`} role='link'>
     <div class='card-image-container'>
       <img
-        src={imageSrc}
-        alt=''
+        src={kit.imageSrc}
+        alt={`${kit.name} kit for ${manufacturer} ${title}`}
         class='card-image skeleton'
         transition:name={`record-${id}`}
       />

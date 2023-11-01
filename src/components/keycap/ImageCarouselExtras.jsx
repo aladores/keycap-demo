@@ -1,6 +1,6 @@
-import { useState, useEffect } from "preact/hooks";
-import "../../styles/ImageCarousel.css";
-import "../../styles/KeycapButtons.css";
+import { useState, useEffect } from 'preact/hooks';
+import '../../styles/ImageCarousel.css';
+import '../../styles/KeycapButtons.css';
 export default function ImageCarouselExtras({ extras, element }) {
   const [currIndex, setCurrIndex] = useState(0);
 
@@ -29,9 +29,8 @@ export default function ImageCarouselExtras({ extras, element }) {
     if (currIndex !== extras.length - 1) {
       return (
         <div
-          className="carousel-arrow right-arrow text-base"
-          onClick={nextSlide}
-        >
+          className='carousel-arrow right-arrow text-base'
+          onClick={nextSlide}>
           ❯
         </div>
       );
@@ -41,9 +40,8 @@ export default function ImageCarouselExtras({ extras, element }) {
     if (currIndex !== 0) {
       return (
         <div
-          className="carousel-arrow left-arrow text-base"
-          onClick={prevSlide}
-        >
+          className='carousel-arrow left-arrow text-base'
+          onClick={prevSlide}>
           ❮
         </div>
       );
@@ -51,16 +49,18 @@ export default function ImageCarouselExtras({ extras, element }) {
   };
 
   return (
-    <section className="carousel-extras-container">
-      <div className="carousel-container">
-        <div className="carousel-slide-container">
-          <div className={`carousel-slide carousel-slide-extra carousel-slide-${element}`}>
+    <section className='carousel-extras-container'>
+      <div className='carousel-container'>
+        <div className='carousel-slide-container'>
+          <div
+            className={`carousel-slide carousel-slide-extra carousel-slide-${element}`}>
             {extras.map((item, index) => {
               return (
                 <img
                   src={item.imageSrc}
-                  className="carousel-image extras-image skeleton"
-                  loading="lazy"
+                  className='carousel-image extras-image skeleton'
+                  alt={`${item.name} ${element}`}
+                  loading='lazy'
                   key={index}
                 />
               );
@@ -74,26 +74,24 @@ export default function ImageCarouselExtras({ extras, element }) {
             return (
               <div
                 className={`carousel-dot extra-dot-${element} ${
-                  index === currIndex ? " active" : ""
+                  index === currIndex ? ' active' : ''
                 }`}
                 onClick={() => {
                   handleClick(index);
                 }}
-                key={index}
-              ></div>
+                key={index}></div>
             );
           })}
         </div>
       </div>
-      <div className="keycap-button-container extras-button-container">
+      <div className='keycap-button-container extras-button-container'>
         {extras.map((item, index) => (
           <button
             className={`primary-button keycap-button-${element} ${
-              index === currIndex ? " active" : ""
+              index === currIndex ? ' active' : ''
             }`}
             onClick={() => handleClick(index)}
-            key={index}
-          >
+            key={index}>
             {item.name}
           </button>
         ))}

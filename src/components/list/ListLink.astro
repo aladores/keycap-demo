@@ -2,10 +2,10 @@
 const { keyCap } = Astro.props;
 ---
 
-<a href={`/keycap/${keyCap.id}`} class="keycap-list-link">
-  <li class="keycap-list-item">
+<li class='keycap-list-item'>
+  <a href={`/keycap/${keyCap.id}`} class='keycap-list-link'>
     <p>{keyCap.data.title}</p>
-    <div class="keycap-color-container">
+    <div class='keycap-color-container'>
       {
         keyCap.data.colors.map((color, index) => {
           if (index > 2) {
@@ -13,22 +13,23 @@ const { keyCap } = Astro.props;
           }
           return (
             <div
-              class="mini-color-block"
+              class='mini-color-block'
               style={`background-color:${color.color.hex}`}
             />
           );
         })
       }
     </div>
-  </li>
-</a>
-
+  </a>
+</li>
 <style>
   .keycap-list-item {
     color: var(--primary-text);
-    display: inline-flex;
+  }
+
+  .keycap-list-link {
+    display: flex;
     align-items: center;
-    flex-grow: 0;
     gap: 1rem;
   }
 

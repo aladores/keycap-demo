@@ -1,6 +1,7 @@
 ---
 import Card from './Card.astro';
 const { cardData, title } = Astro.props;
+console.log(cardData[0].data.kits[0].name);
 ---
 
 <section>
@@ -13,7 +14,7 @@ const { cardData, title } = Astro.props;
             id={item.id}
             manufacturer={item.data.manufacturer}
             title={item.data.title}
-            imageSrc={item.data.kits[0].imageSrc}
+            kit={item.data.kits[0]}
             designer={item.data.designer}
           />
         );

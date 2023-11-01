@@ -1,12 +1,12 @@
-import { useEffect, useState } from "preact/hooks";
-import { useStore } from "@nanostores/preact";
+import { useEffect, useState } from 'preact/hooks';
+import { useStore } from '@nanostores/preact';
 import {
   index,
   setIndex,
   incrementIndex,
   decrementIndex,
-} from "../../stores/indexStore";
-import "../../styles/ImageCarousel.css";
+} from '../../stores/indexStore';
+import '../../styles/ImageCarousel.css';
 
 export default function ImageCarousel({ kits, id }) {
   const [isImageLoading, setIsImageLoading] = useState(true);
@@ -25,7 +25,7 @@ export default function ImageCarousel({ kits, id }) {
   }, [$index]);
 
   function moveSlide() {
-    const slideContainer = document.querySelector(".carousel-slide");
+    const slideContainer = document.querySelector('.carousel-slide');
     slideContainer.style.transform = `translateX(-${$index * 100}%)`;
   }
 
@@ -33,9 +33,8 @@ export default function ImageCarousel({ kits, id }) {
     if ($index !== 0) {
       return (
         <div
-          className="carousel-arrow left-arrow text-base"
-          onClick={decrementIndex}
-        >
+          className='carousel-arrow left-arrow text-base'
+          onClick={decrementIndex}>
           ❮
         </div>
       );
@@ -46,9 +45,8 @@ export default function ImageCarousel({ kits, id }) {
     if ($index !== kits.length - 1) {
       return (
         <div
-          className="carousel-arrow right-arrow text-base"
-          onClick={incrementIndex}
-        >
+          className='carousel-arrow right-arrow text-base'
+          onClick={incrementIndex}>
           ❯
         </div>
       );
@@ -56,21 +54,20 @@ export default function ImageCarousel({ kits, id }) {
   };
 
   return (
-    <section className="carousel-container ">
+    <section className='carousel-container '>
       <div
-        className="carousel-slide-container"
-        style={`view-transition-name: record-${id};`}
-      >
+        className='carousel-slide-container'
+        style={`view-transition-name: record-${id};`}>
         <div
-          className="skeleton-placeholder skeleton"
-          style={{ display: isImageLoading ? "block" : "none" }}
-        ></div>
-        <div className="carousel-slide">
+          className='skeleton-placeholder skeleton'
+          style={{ display: isImageLoading ? 'block' : 'none' }}></div>
+        <div className='carousel-slide'>
           {kits.map((item, index) => {
             return (
               <img
                 src={item.imageSrc}
-                className="carousel-image skeleton"
+                className='carousel-image skeleton'
+                alt={`${item.name} kit`}
                 onLoad={setIsImageLoading(false)}
                 key={index}
               />
@@ -80,14 +77,15 @@ export default function ImageCarousel({ kits, id }) {
         {leftArrowElement()}
         {rightArrowElement()}
       </div>
-      <div className="mini-thumbnail-container">
+      <div className='mini-thumbnail-container'>
         {kits.map((item, index) => {
           return (
             <img
               src={item.imageSrc}
               className={`mini-thumbnail skeleton ${
-                index === $index ? " active" : ""
+                index === $index ? ' active' : ''
               }`}
+              alt={`${item.name} kit`}
               key={index}
               onClick={() => {
                 handleKitClick(index);
@@ -96,16 +94,15 @@ export default function ImageCarousel({ kits, id }) {
           );
         })}
       </div>
-      <div className="carousel-dots-container">
+      <div className='carousel-dots-container'>
         {kits.map((item, index) => {
           return (
             <div
-              className={`carousel-dot ${index === $index ? " active" : ""}`}
+              className={`carousel-dot ${index === $index ? ' active' : ''}`}
               onClick={() => {
                 handleKitClick(index);
               }}
-              key={index}
-            ></div>
+              key={index}></div>
           );
         })}
       </div>

@@ -2,8 +2,8 @@
 const { id, manufacturer, title, imageSrc, designer } = Astro.props;
 ---
 
-<a href={`/keycap/${id}`}>
-  <li class='card'>
+<li class='card' role='button'>
+  <a href={`/keycap/${id}`}>
     <div class='card-image-container'>
       <img
         src={imageSrc}
@@ -20,8 +20,8 @@ const { id, manufacturer, title, imageSrc, designer } = Astro.props;
         {manufacturer + ' ' + title}
       </h3>
     </div>
-  </li>
-</a>
+  </a>
+</li>
 
 <style>
   .card {

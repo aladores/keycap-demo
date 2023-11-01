@@ -2,24 +2,25 @@
 const { bannerData } = Astro.props;
 ---
 
-<section class="banner-container">
+<section class='banner-container'>
   <img
     src={bannerData.data.renders[0].imageSrc}
-    class="banner-image skeleton"
+    alt={`${bannerData.data.manufacturer} ${bannerData.data.title} - Render 1`}
+    class='banner-image skeleton'
   />
-  <div class="banner-info-wrapper">
-    <div class="banner-info-container">
-      <p class="text-small banner-label">
+  <div class='banner-info-wrapper'>
+    <div class='banner-info-container'>
+      <p class='text-small banner-label'>
         {bannerData.data.designer.toUpperCase()}
       </p>
-      <h3 class="text-xl">{bannerData.data.title}</h3>
-      <p class="text-small banner-description">
+      <h3 class='text-xl'>{bannerData.data.title}</h3>
+      <p class='text-small banner-description'>
         {bannerData.data.description}
       </p>
     </div>
 
-    <a class="button-banner-link" href={`/keycap/${bannerData.id}`}>
-      <button class="button-banner secondary-button text-normal"
+    <a class='button-banner-link' href={`/keycap/${bannerData.id}`}>
+      <button class='button-banner secondary-button text-normal'
         >VIEW MORE</button
       >
     </a>

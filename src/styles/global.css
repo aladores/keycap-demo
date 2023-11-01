@@ -89,8 +89,8 @@ body {
     flex-direction: column;
     flex: 1;
     gap: 1rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 table {

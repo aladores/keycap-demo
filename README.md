@@ -20,14 +20,6 @@ Keycap Demo is a website designed to easily add, find, and display custom keycap
 In the custom mechanical keyboard hobby, finding information about a specific keycap set can be difficult. Information is spread across different sources, and finding a specific keycap set can take a long time. There is also no standard way of presenting information.
 
 ## Built With
-- Astro.js
-  - A static site generator was a good fit given the majority of the site was content based and does not update very often.
-  - Astro still gives the ability to add interactible ui components when needed in this case preact for the header search bar and image carousels.
-  - Perforamnce: The site needed to ship with as little javascript as possible and minimize load times as the majority of the bandwith would be used for images. 
-- Preact
-  - Preact was chosen over React for its performance features. As react's more advacended features and eco system were not necessary.
-
-## Built With
 
 - **Astro.js**
   - **Static Site Generation**: The majority of the website's content is static and doesn't require frequent updates. A static site generator allowing pre-rendered pages, resulting in faster loading times.

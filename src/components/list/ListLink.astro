@@ -26,7 +26,9 @@ const { keyCap } = Astro.props;
   .keycap-list-item {
     color: var(--primary-text);
   }
-
+  .keycap-list-item:hover p {
+    color: var(--hover-link-text);
+  }
   .keycap-list-link {
     display: flex;
     align-items: center;
@@ -40,9 +42,5 @@ const { keyCap } = Astro.props;
   .mini-color-block {
     height: 20px;
     width: 20px;
-  }
-
-  li > p:hover {
-    color: var(--hover-link-text);
   }
 </style>

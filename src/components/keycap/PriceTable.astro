@@ -13,29 +13,32 @@ const currencies = kits.reduce((allCurrencies, kit) => {
 function currencyWithSymbol(currency) {
   let currencyWithSymbol = currency;
   switch (currency) {
-    case "USD":
-      currencyWithSymbol = "$" + currency;
+    case 'USD':
+      currencyWithSymbol = '$' + currency;
       break;
-    case "CAD":
-      currencyWithSymbol = "$" + currency;
+    case 'CAD':
+      currencyWithSymbol = '$' + currency;
       break;
-    case "EUR":
-      currencyWithSymbol = "€" + currency;
+    case 'EUR':
+      currencyWithSymbol = '€' + currency;
       break;
-    case "GBP":
-      currencyWithSymbol = "£" + currency;
+    case 'GBP':
+      currencyWithSymbol = '£' + currency;
       break;
-    case "CNY":
-      currencyWithSymbol = "¥" + currency;
+    case 'CNY':
+      currencyWithSymbol = '¥' + currency;
       break;
-    case "PHP":
-      currencyWithSymbol = "₱" + currency;
+    case 'PHP':
+      currencyWithSymbol = '₱' + currency;
       break;
-    case "CLP":
-      currencyWithSymbol = "$" + currency;
+    case 'CLP':
+      currencyWithSymbol = '$' + currency;
       break;
-    case "AUD":
-      currencyWithSymbol = "$" + currency;
+    case 'AUD':
+      currencyWithSymbol = '$' + currency;
+      break;
+    case 'SGD':
+      currencyWithSymbol = '$' + currency;
       break;
   }
 
@@ -43,15 +46,15 @@ function currencyWithSymbol(currency) {
 }
 ---
 
-<div class="table-wrapper">
-  <table class="text-base">
+<div class='table-wrapper'>
+  <table class='text-base'>
     <thead>
       <tr>
         <th>Name</th>
         {
           currencies.map((currency) => {
             return (
-              <th class="text-align-right">{currencyWithSymbol(currency)}</th>
+              <th class='text-align-right'>{currencyWithSymbol(currency)}</th>
             );
           })
         }
@@ -64,7 +67,7 @@ function currencyWithSymbol(currency) {
             <tr>
               <td>{kit.name}</td>
               {currencies.map((currency) => {
-                return <td class="table-data">{kit.price[currency]}</td>;
+                return <td class='table-data'>{kit.price[currency]}</td>;
               })}
             </tr>
           );

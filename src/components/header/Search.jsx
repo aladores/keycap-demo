@@ -32,7 +32,6 @@ export default function Search({
   }
 
   function handleSearchBarClose() {
-    console.log('here');
     setIsSearchBarOpen(false);
   }
 

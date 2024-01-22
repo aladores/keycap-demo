@@ -1,11 +1,47 @@
-
-
 ---
+import Layout from '../layouts/Layout.astro';
 ---
 
-{process.env.NODE_ENV === 'development' && (
-  <>
-    <h1>This page is only available in the development environment</h1>
-    <!-- Your page content -->
-  </>
-)}
+{
+  process.env.NODE_ENV === 'development' && (
+    <Layout title='Keycap Demo'>
+      <main class='main-container'>
+        <form id='add-form' onsubmit='test()'>
+          <h2 class='test'>Add form</h2>
+          <label for='title'>Title:</label>
+          <input type='text' id='title' required />
+
+          <button type='submit'>Generate JSON</button>
+        </form>
+      </main>
+    </Layout>
+  )
+}
+
+<script is:inline>
+  function test() {
+    console.log('submitted');
+  }
+  // document
+  //   .getElementById('add-form')
+  //   .addEventListener('submit', function (event) {
+  //     event.preventDefault();
+  //     const formData = new FormData(event.target);
+  //     const jsonData = {};
+
+  //     console.log(formData);
+  //     // Extract data from form and construct JSON
+  //     formData.forEach((value, key) => {
+  //       if (!jsonData[key]) {
+  //         jsonData[key] = value;
+  //       } else {
+  //         if (!Array.isArray(jsonData[key])) {
+  //           jsonData[key] = [jsonData[key]];
+  //         }
+  //         jsonData[key].push(value);
+  //       }
+  //     });
+
+  //     console.log(JSON.stringify(jsonData, null, 2));
+  //   });
+</script>

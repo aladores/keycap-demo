@@ -13,6 +13,8 @@
     "@astro-aws/adapter": "^0.4.0",
     "@astrojs/node": "^6.0.3",
     "@astrojs/preact": "^3.0.0",
+    "@fontsource/merriweather": "^5.0.8",
+    "@fontsource/roboto": "^5.0.8",
     "@nanostores/preact": "^0.5.0",
     "@types/react": "^18.2.21",
     "@types/react-dom": "^18.2.7",
